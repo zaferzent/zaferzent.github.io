@@ -1,0 +1,9 @@
+---           
+layout: post
+title: Blogger'da yazılara hızlı düzenle bağlantısı nasıl eklenir
+date: 2018-05-10 21:45:00 UTC
+updated: 2022-08-25 19:59:48 UTC
+comments: false
+categories: Blogger
+---
+<p>Blogger'da yazıları düzenlemek için Blogger Kontrol Paneline gidip, Kayıtlar başlığından düzenlemek istenen yazı bulunup rutin yazı düzenleme adımını uygulamak gerekiyor. Bu uzun rutini uygulamak yerine blog anasayfasında yer alan yazıların kenarına, köşesine Hızlı Düzenle bağlantısı eklenerek kolaylaştırılabiliyor. Bazı varsayılan blogger şablonlarında yazıların bilgi kısmında hızlı düzenle bağlantısı bulunsa da özelleştirilmiş şablonlarda bu kısa kod parçacığı bulunmuyor.</p><a name='more'></a><br />Eski şablonlarda göz gezdirirken bu kod parçacığını not alıp kaybetmemek adına paylaşmak istedim. <br /><br />Kodun kullanımında iki önemli nokta bulunuyor. Birinicisi kodun sadece Yönetici tarafından görünmesi için <mark>span</mark> ile başlayan ve <mark>item-control blog-admin</mark> class ismine sahip olması. Bu sayede Hızlı Düzenle bağlantısını sadece yöneticiler görebiliyor. *Uyarı : Eğer kod parçacığı herkese görünüyorsa blogger'ın varsayılan dosyaları; widget_css_bundle.css gibi dosyalar pasif duruma getirilmiş olabilir.<br /><br />İkinci önemli nokta ise kodlar arasında turuncu renk ile belirginleştirdiğim <mark>blogID</mark> kısmı. Burada yer alan ID kısmına hangi blogda kullanılacaksa o bloğa ait ID'nin eklenmesi gerekiyor. Bu ID Kontrol Paneline giriş yapıldığında adres satırında görülebiliyor.<br /><br />* Aşağıdaki kod yazıların altına üstüne veya bilgi kısmı var ise oraya eklenebilir.<br /><br /><pre>&lt;span class='item-control blog-admin' style='font-size:13px'&gt;<br />&lt;a expr:href='&amp;quot;https://www.blogger.com/blogger.g?blogID=<em style="color:orange">3193402366393083298</em>#editor/target=post;postID=&amp;quot; + data:post.id' style='color:green' target='_blank'&gt;Hızlı Düzenle&lt;/a&gt;<br />&lt;/span&gt;</pre><br />

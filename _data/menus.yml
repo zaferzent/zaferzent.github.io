@@ -1,0 +1,29 @@
+# Top Menu
+topmenu:
+
+- title: Home
+  url: ""
+
+- title: About
+  url: "p/about.html"
+
+- title: Contact
+  url: "contact/"
+
+
+# Footer Menu
+footermenu:
+
+- title: Home
+  url: ""
+
+- title: Privacy Policy
+  url: "privacy-policy/"
+
+
+# Sidebar Menu
+sidebarmenu:
+
+- title: WebP Dönüştürücü
+  url: "webp-donusturucu/"
+

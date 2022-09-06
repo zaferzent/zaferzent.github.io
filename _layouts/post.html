@@ -1,0 +1,68 @@
+---
+layout: index1
+disqus: false
+archive: false
+---
+
+<!-- Begin Article
+================================================== -->
+
+
+<section class='section blogs' id='blogs'>
+  <div class='blog__grid section' id='_posts'>
+   {% assign author = site.authors[post.author] %}
+ <div class='blog'>
+    
+	
+	<h3>{{ page.title }} </h3>
+    {{content}}
+ </div>
+ 
+  <div id="comments">                          
+                {% include disqus.html %} 
+            </div>
+            
+
+</div> 
+    <!-- Pagination -->
+    <div style="display:none" class="bottompagination">
+      <span class="navigation" role="navigation">
+          {% include pagination.html %}
+      </span>
+  </div>
+  <div class='blog__grid2 section' id='_sidebar'>
+    {% include sidebar1.html %}
+  </div>
+  </section>
+
+
+
+
+
+
+
+               
+                
+               
+				
+                
+		
+			
+            
+           
+            
+         
+            
+            
+         
+           
+
+        
+
+		
+           
+        
+
+
+<!-- End Article
+================================================== -->

@@ -1,0 +1,9 @@
+---           
+layout: post
+title: Blogger etiket sayfasındaki yazı sayısı nasıl ayarlanır
+date: 2013-07-10 01:24:00 UTC
+updated: 2022-08-25 20:05:58 UTC
+comments: false
+categories: Blogger
+---
+<div class="separator" style="display: none; text-align: left;"><a href="https://lh4.googleusercontent.com/-rQVXRlt1838/Udy4Tbe-2JI/AAAAAAAACOQ/WPfGLD37A9U/h120/blogger-etiket-kategori-sayfalarinda-yazi-sayisini-ayarlamak.png" imageanchor="1"><img border="0" src="https://lh4.googleusercontent.com/-rQVXRlt1838/Udy4Tbe-2JI/AAAAAAAACOQ/WPfGLD37A9U/h120/blogger-etiket-kategori-sayfalarinda-yazi-sayisini-ayarlamak.pngg" /></a></div>Blogger'da etiketlere tıklanıldığında veya etiket-kategori sayfalarına girildiğinde temalardan kaynaklanan sebeplerden dolayı çok fazla sayıda yazı listelenmekte. Bu sorunu küçük bir kod parçasıyla çözmek mümkün. Ayrıca bu kod ile sadece etiketler-kategoriler bileşeninde yer alan etiketlere ait yazı adetlerini ayarlamanın dışında diğer sayfalarda bulunan veya yazı bilgisi kısmında bulunan etiketlere uygulamakta mümkün.<br /><a name='more'></a> <br /><br /><a href="http://www.zaferzent.com/2013/07/blogger-etiket-kategori-sayfalarinda-gosterilecek-yazi-sayisini-ayarlamak.html">Blogger etiket-kategori sayfalarında gösterilecek yazı sayısını belirlemek veya ayarlamak</a> için şablon editöründe alttaki kod veya kodlar bulunarak; <br /><pre><code>data:label.url</code></pre>Aşağıdaki kod ile değiştirilmesi yeterlidir. <br /><pre><code>data:label.url + "?max-results=5"</code></pre>Etiket-kategori bağlantıları bu şekilde düzenlendiğinde bağlantılar; <br /><b>http://www.zaferzent.com/search/label/Blogger?max-results=5</b> bu şekilde düzenlenmiş olacak ve sayfalarda 5'er adet yazı listelenecektir. 5 sayısı isteğe göre değiştirilebilir.

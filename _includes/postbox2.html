@@ -1,0 +1,7 @@
+{% assign author = site.authors[post.author] %}
+ <div class='blog'>
+    
+	
+	<h3><a href='{{ post.url | absolute_url }}' title='{{ post.title }}'> {{ post.title }} </a></h3>
+    {{ post.excerpt}}
+ </div>

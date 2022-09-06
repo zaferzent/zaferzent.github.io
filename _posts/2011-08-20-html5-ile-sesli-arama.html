@@ -1,0 +1,9 @@
+---           
+layout: post
+title: HTML5 İle Sesli Arama
+date: 2011-08-20 20:33:00 UTC
+updated: 2022-08-25 21:34:58 UTC
+comments: false
+categories: Blog
+---
+Teknoloji günden güne ilerliyor ve hep yeni sistemler geliştiriliyor. Yakın zamanda HTML5 çıktı. Fakat henüz yaygın olarak kullanılmıyor. Fakat şuan heryerde gündemi meşgul eden bir gelişme var. Bu gelişme arama formlarında sesli olarak arama yapabilmemizi sağlayan küçük ama etkili bir sistem. HTML5'in bize kazandırdığı bu özelliği Google'ın ingilizcesi sayfası olan <a href="http://www.google.com/en">http://www.google.com/en</a> adresin test edebilirsiniz. Fakat küçük bir sorun var bu özelliği sadece Google Chrome tarayıcısında kullanabiliyoruz. Ayrıca kelimeleri düzgün seslendirmek de önemli. Siz de arama formunuzda sesli arama özelliğini kullanabilirsiniz. Bunu yapmak hiç de zor değil.<br /><a name='more'></a><br />Alttaki arama kutusunu<br /><pre>&lt;input type="text" id="s" name="q" /&gt;</pre><br />Şu şekilde yapmanız yeterli olacaktır.<br /><pre>&lt;input type="text" id="s" name="q" x-webkit-speech="x-webkit-speech" /&gt;</pre><br />Kelimeyi kutucuğa yazıyor fakat otomatik arama işlemi yapmıyor ise de<br /><pre>&lt;input type="text" id="s" name="q" x-webkit-speech="x-webkit-speech" onwebkitspeechchange="this.form.submit()" /&gt;<br /></pre>Bu şekilde düzenlemelisiniz.<br /><br />Kısaca arama kutumuza eklediğimiz kodlar şunlar :<br /><pre>&lt;x-webkit-speech="x-webkit-speech" onwebkitspeechchange="this.form.submit()" &gt;<br /></pre><br />Bu işlemleri doğru bir şekilde yaptığınız takdirde arama kutunuzda alttaki resimdeki gibi mikrofon resmi çıkacaktır. Mikrofon'a tıklayıp arama yapmak istediğiniz kelimeyi seslendirdiğinizde otomatik olarak arama işlemi yapılacaktır.

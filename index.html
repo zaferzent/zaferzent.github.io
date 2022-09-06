@@ -1,0 +1,29 @@
+---
+title: Home
+layout: index1
+background: 
+---
+<!-- Posts List with Sidebar (except featured)
+================================================== -->
+<section class='section blogs' id='blogs'>
+  <div class='blog__grid section' id='_posts'>
+      {% for post in paginator.posts limit:4 %}
+      {% unless post.featured == false %}
+        {% include postbox2.html %}
+      {% endunless %}
+      {% endfor %}
+	  
+	  
+	 <!-- Pagination -->
+    <div style="" class="bottompagination">
+      <span class="navigation" role="navigation">
+          {% include pagination.html %}
+      </span>
+  </div> 
+	  
+</div> 
+    
+  <div class='blog__grid2 section' id='_sidebar'>
+    {% include sidebar1.html %}
+  </div>
+  </section>

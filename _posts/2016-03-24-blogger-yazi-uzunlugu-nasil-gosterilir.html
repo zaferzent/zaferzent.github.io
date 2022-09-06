@@ -1,0 +1,9 @@
+---           
+layout: post
+title: Blogger yazı uzunluğu nasıl gösterilir
+date: 2016-03-24 22:38:00 UTC
+updated: 2022-08-25 20:02:55 UTC
+comments: false
+categories: Blogger
+---
+<img alt="Blogger yazı uzunluğu nasıl gösterilir ?" src="http://4.bp.blogspot.com/-be2ALpC4BSo/Uurf_xOeykI/AAAAAAAACtw/WdcNniwS4G4/s1600/blogger-blogspot-com-logo.jpg"/><br />jQuery öğretici sitelerinde gezinirken bir div içerisinde bulunan yazıya ait kelime ve karakter sayısını (yazı uzunluğunu) göstermeye yarayan yazı bilgi alanlarında geliştirilerek kullanılabilecek aşağıdaki (yazının devamındaki) kodlara denk geldim.<br /><a name='more'></a><br /><h2>Blogger yazı uzunluğu özelliği için gerekli kodlar</h2> &lt;/head&gt; öncesine,<br /><pre>&lt;script&gt;<br />$(function() {<br />var text = $('.post-excerpt').text(); // .post-excerpt yerine yazının bulunduğu div id - class ismi çoğunluk olarak .post-body olabilir<br />var charsLength = text.length;<br />var wordsCount = text.split(' ').length;<br />$('#words').html(' ' + wordsCount + ' kelime'); // kelime sayısını göstermek için<br />$('#chars').html(' ' + charsLength + ' karakter'); // karakter sayısını göstermek için<br />});<br />&lt;/script&gt;</pre>Kodun nerede çalışması, gözükmesi isteniyorsa oraya da aşağıdaki kod eklenecek. Sadece kelime sayısını göstermek için words, sadece karakter sayısını göstermek için chars id'lerine sahip span kullanılabilir.<br /><pre>&lt;span id=&quot;words&quot;&gt;&lt;/span&gt;<br />&lt;span id=&quot;chars&quot;&gt;&lt;/span&gt;</pre><br />*Şu an bloğumda yazı başlıklarının hemen altında bu kodun çalıştığını görebilirsiniz.
