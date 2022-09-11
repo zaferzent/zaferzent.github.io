@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: Jekyll'e Geçiş Yaptım
 date: 2022-09-12 00:37 Europe/Istanbul
