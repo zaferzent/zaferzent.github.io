@@ -55,23 +55,7 @@
     <div class='clear'></div>
     </div>
     
-    <div class='widget HTML' data-version='1' id='HTML2'>
-      <h2 class='title'>Güncellenen Yazılar</h2>
-      <div class='widget-content'>
-        {% for post in site.categories.Blog limit:5 %}
-		
-		
-		
-        {% if post.url %}
-        <li style="    padding-bottom: 10px;
-        border-bottom: 1px dashed #ddd;
-        padding-top: 10px; width:100%; list-style-type: none ; margin-left: px; font-size:13px"><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-        
-      </div>
-      <div class='clear'></div>
-      </div>
+  
 
 
       <div class='widget HTML' data-version='1' id='HTML2'>
