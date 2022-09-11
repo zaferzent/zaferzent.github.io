@@ -1,5 +1,5 @@
-title: "Weblog"
-email: wowthemesnet@gmail.com
+title: "Web Günlüğü"
+email: zfrznt@gmail.com
 timezone: UTC
 baseurl: "/"
 permalink: ":year/:month/:slug.html"
@@ -43,9 +43,9 @@ authors:
 
 # Social
 social:
-  instagram: https://www.instagram.com/bootstrapstarter/
-  facebook: https://www.facebook.com/bootstrapstartercom-346329609045284
-  twitter: https://twitter.com/bstartercom
+  instagram: https://www.instagram.com/
+  facebook: https://www.facebook.com/
+  twitter: https://twitter.com/
 
 # Plugins
 plugins: 
