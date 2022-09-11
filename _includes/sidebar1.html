@@ -12,7 +12,7 @@
   {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
 
-<li><a class='link' title="{{category_name}}" href="{{site.baseurl}}/categories#{{category_name}}">{{category_name}} ({{ category[1].size }})</a></li>
+<li><a class='link' title="{{category_name}}" href="{{site.baseurl}}/kategoriler#{{category_name}}">{{category_name}} ({{ category[1].size }})</a></li>
  {% endfor %}
 
 
@@ -23,7 +23,7 @@
 
 
     <div class='widget Label' data-version='1' id=''>
-      <h2>Recent Posts</h2>
+      <h2>Son Yazılar</h2>
       <div class='widget-content list-label-widget-content'>
       <ul> 
         {% for post in site.posts limit:5  %}
@@ -41,9 +41,9 @@
       </div>
     
     <div class='widget HTML' data-version='1' id='HTML2'>
-    <h2 class='title'>Featured Posts</h2>
+    <h2 class='title'>Seçilmiş Yazılar</h2>
     <div class='widget-content'>
-      {% for post in site.categories.Deneme %}
+      {% for post in site.categories.Blogger limit:5 %}
       {% if post.url %}
       <li style="    padding-bottom: 10px;
       border-bottom: 1px dashed #ddd;
@@ -56,9 +56,12 @@
     </div>
     
     <div class='widget HTML' data-version='1' id='HTML2'>
-      <h2 class='title'>Updated Posts</h2>
+      <h2 class='title'>Güncellenen Yazılar</h2>
       <div class='widget-content'>
-        {% for post in site.categories.Jekyll %}
+        {% for post in site.categories.Blog limit:5 %}
+		
+		
+		
         {% if post.url %}
         <li style="    padding-bottom: 10px;
         border-bottom: 1px dashed #ddd;
