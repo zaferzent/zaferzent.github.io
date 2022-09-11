@@ -46,6 +46,7 @@ input, textarea{border:1px solid #000}
 input:hover{cursor:pointer}
 .blog h3{line-height: 1.4;}
 .blog{ border-radius:10px}
+.blog p{white-space: pre-line;}
 a.en{display:none;background: var(--clr-fg); color: #fff; padding: 4px;  border-radius: 4px;}
 @media only screen and (max-width: 1024px) {
 .blog__grid2{max-width:100%;margin-top:40px;float:left;clear:both}
