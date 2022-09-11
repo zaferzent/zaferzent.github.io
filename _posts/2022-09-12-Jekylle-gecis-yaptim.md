@@ -2,7 +2,7 @@
 published: false
 layout: post
 title: Jekyll'e Geçiş Yaptım
-date: 2022-09-12T00:30:00.000Z
+date: 2022-09-12 00:37 Europe/Istanbul
 comments: true
 categories: 'Blog, Kısa Kısa'
 ---
