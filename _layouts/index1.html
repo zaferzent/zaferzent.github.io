@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta content='width=device-width, initial-scale=1' name='viewport'/>
-<title>{{ page.title }} - {{site.title}}</title>
 {% seo %}
 <link href="{{ site.baseurl }}/assets/css/style1.css" rel="stylesheet">
 {% if jekyll.environment == "production" %}       
@@ -17,10 +16,10 @@ gtag('config', '{{site.ganalytics}}');
 </script>
 {% endif %}
 </head>
-<body class='{{ layout }}' id='top'>
+<body class='light' id='top'>
 
 <header class='header center'>
-<h1 style=''><a class='link' href='/affiliates-jekyll-theme/' style='font-size: 2rem; color:#2978b5; font-weight:500'>Web Günlüğü</a></h1>
+<h1 style=''><a class='link' href='/' style='font-size: 2rem; color:#2978b5; font-weight:500'>Web Günlüğü</a></h1>
 <nav class='nav center'>
 <ul class='nav__list center'>
   {% for item in site.data.menus.topmenu %}
