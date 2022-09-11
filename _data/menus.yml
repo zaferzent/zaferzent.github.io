@@ -1,29 +1,32 @@
 # Top Menu
 topmenu:
 
-- title: Home
+- title: Anasayfa
   url: ""
 
-- title: About
-  url: "p/about.html"
+- title: Hakkında
+  url: "p/hakkinda.html"
+  
+- title: Arşiv
+  url: "p/arsiv.html"
 
-- title: Contact
-  url: "contact/"
+- title: iletişim
+  url: "p/iletisim.html"
 
 
 # Footer Menu
 footermenu:
 
-- title: Home
+- title: Anasayfa
   url: ""
 
-- title: Privacy Policy
-  url: "privacy-policy/"
+- title: Gizlilik Politikası
+  url: "p/gizlilik-politikasi.html"
 
 
 # Sidebar Menu
 sidebarmenu:
 
-- title: WebP Dönüştürücü
-  url: "webp-donusturucu/"
+- title: Blogger Kod Döüştürücü
+  url: "p/blogger-kod-donusturucu.html"
 
