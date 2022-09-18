@@ -7,7 +7,6 @@ comments: false
 categories: Blog
 ---
 Blogger'a artık vedalaşma zamanının geldiğini hatta geçtiğini düşünmeye başladım son zamanlarda. En büyük sebeplerden birisi de yıllardır şablon yapısının değişmemesi, yeterli geliştirmelerin yapılmaması, tam olarak bir özgürlük sağlamamasıydı. Bir süredir Jekyll, Hugo gibi statik bir site oluşturucu yazılımına geçme düşüncem vardı. Fakat gerek tecrübesizlik, gerek bilgi eksiliği yüzünden bu düşüncem hep yarım kaldı. Artık hatalarla sorunlarla bir şekilde geçişi tamamlamayı düşünüyorum.  
-
 \\
 Geçiş sürecinde, bir süreliğine bu blogda eksiklikler, hatalar veya farklı şeyler görülebilir.  
 \\
