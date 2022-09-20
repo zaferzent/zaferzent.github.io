@@ -10,6 +10,9 @@ topmenu:
 - title: Arşiv
   url: "p/arsiv.html"
 
+- title: Projeler
+  url: "p/projeler.html"
+
 - title: iletişim
   url: "p/iletisim.html"
 
