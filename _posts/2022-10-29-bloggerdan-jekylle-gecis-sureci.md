@@ -10,7 +10,7 @@ tags:
   - jekyll
   - blogger
   - blogspot
-permalink: /bloggerdan-jekylle-sureci
+permalink: /bloggerdan-jekylle-gecis-sureci
 draft: true
 title: Blogger'dan Jekyll'e Geçiş Süreci
 ---
