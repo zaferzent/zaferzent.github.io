@@ -15,13 +15,13 @@ draft: true
 title: Blogger'dan Jekyll'e Geçiş Süreci
 ---
 Yakın zamanda uzun ve zorlu bir süreç sonunda Blogger'dan Jekyll'e geçiş yapmıştım ve konu ile alakalı kısa bir bilgilenedirme paylaşmıştım. Bu yazımda ise nasıl geçiş yaptım, nasıl sorunlarla karşılaştım, iyi mi yaptım, kötü mü yaptım ile alakalı elim döndüğünce rehber niteliğinde bir şeyler paylaşacağım.
-
 <br />
+
 Jekyll Nedir ?
 ------
 [Jekyll](https://jekyllrb.com) statik bir site oluşturucu yazılımı. Statikten kasıt bir veritabanı sistemi ve bir yönetim paneli gibi argümanların bulunmaması. İçerikler oluşturulurken markdown formatında oluşturuluyor(Markdown HTML etiketlerine göre daha kısa ve kolay bir kullanım sağlıyor) ve Jekyll bunu HTML sayfalara dönüştürek içeriğin görüntülenmesini sağlıyor. Markdown hakkında bilgi almak ve HTML'den farkı nedir öğrenmek için [Markdown](https://tr.wikipedia.org/wiki/Markdown) adresine bakılabilir.
-
 <br />
+
 Neden Jekyll'e Geçiş Yaptım ?
 ------
 Daha önce de [Bloğumu Taşıyorum](/2022/08/blogumu-tasiyorum.html) yazısında belirttiğim gibi Blogger'ın bir türlü gerek şablon yapısı gerek diğer geliştirmeler olsun artık çok geride kalması oldu. Tabi burada en önemli sebep Google'un herhagi bir kazanç sağlamadığı bir servis için çok fazla destek veya geliştirme yapmasını beklemiyorduk. Fakat en azından biraz daha fazla özgürlük sağlayabilirdi.
@@ -29,13 +29,13 @@ Daha önce de [Bloğumu Taşıyorum](/2022/08/blogumu-tasiyorum.html) yazısınd
 Ayrıca son zamanlarda artık bir değişikliğe gitmenin zamanın geldiğini iyiden iyiye düşünmeye başlamıştım ve bu süreçte Statik site oluşturuculara merakım hayli ile artmıştı. 
 
 Jekyll, Hugo, Hexo gibi statik site oluşturucularını son zamanlarda inceleme ve test etme fırsatım oldu. Bunlardan özellikle Jekyll bana daha cazip geldi.
-
 <br />
+
 Adım adım Jekyll'e Geçiş Rehberi ?
 ------
 Aslında en ince ayrıntısına kadar tüm süreci yazmak isterdim fakat araya giren zaman sorunu nedeni ile yararlandığım kaynaklar ve nasıl bir yol izledim, nasıl sorunlarlarla karşı karşıya kaldım ve bunları nasıl çözüme ulaştırdım özet bir şekilde onlardan bahsedeceğim.
-
 <br />
+
 1 - Jekyll kurulum ve github üzerinde yayına alma
 ------
 Jekyll'in kurulumu ve github üzerinde yayına almak için çok fazla kaynak var. Ben ingilizce veya Türkçe dilinde çokla fazla kaynak inceledim. Fakat ingilizce kaynaklarla çok fazla zaman kaybetmek istemiyorsanız youtube üzerinde bulunan ve gayet anlaşılır bir anlatıma sahip olan [Yazılım - DEV](https://www.youtube.com/channel/UCinNBqUVs98p-t-fzJ870HA/videos) kanalının videolarından yararlanabilirsiniz.
