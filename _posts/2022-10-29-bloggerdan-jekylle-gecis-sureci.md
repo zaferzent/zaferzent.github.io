@@ -63,7 +63,7 @@ Migrate.rb dosyasını github adresimden indirebilirsiniz : **[migrate.rb](https
 
 3 - Blogger Yorumlarını Disqus'a, Disqus'tan Jekyll'e Aktarma
 ------
-Jekyll'de kullanılabilecek bir yorum sistemi olan Disqus hali hazırda Blogger için de kullanılabiliyor. Ben daha önceleri kurup test etme fırsatı bulmuştum. Fakat blogger yorum sistemini kullanmaya devam ettim. Jekyll'e geçiş yaptıktan sonra doğal olarak Disqus'u kullanmaya başladım. Burada önemli nokta Disqus destekli bir Jekyll temasını kullanmak. Blogger yorumlarını [Disqus Import](https://disqus.com/admin/discussions/import/platform/blogger/) sayfasından blogger yorumlarını disqus'a aktardım. Daha sonrasında Jekyll'e çektim. 
+Jekyll'de kullanılabilecek bir yorum sistemi olan Disqus hali hazırda Blogger için de kullanılabiliyor. Ben daha önceleri kurup test etme fırsatı bulmuştum. Fakat blogger yorum sistemini kullanmaya devam ettim. Jekyll'e geçiş yaptıktan sonra doğal olarak Disqus'u kullanmaya başladım. Burada önemli nokta Disqus destekli bir Jekyll temasını kullanmak. Blogger yorumlarını **[Disqus Import](https://disqus.com/admin/discussions/import/platform/blogger/)** sayfasından blogger yorumlarını disqus'a aktardım. Daha sonrasında Jekyll'e çektim. 
 <br />Yorumları Disqus'a aktarmadaki önemli konu ise varolan blog adresi ve disqus'a eklenen site adresi aynı olması gerekiyor. Eğer blogadi.blogspot.com adresinden özel alan adı alınıp öyle Jekyll'e geçiş yapılacaksa önce blogspot adresi özel alan adına yönlendirilmeli ondan sonra yorumlar Disqus'a aktaralıp daha  Jekyll'e taşıma işlemini yapmak gerekiyor. Çünkü Disqus url bazlı çalışıyor.
 <br />
 
