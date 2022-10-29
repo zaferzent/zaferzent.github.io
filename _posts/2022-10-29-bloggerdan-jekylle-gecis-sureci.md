@@ -58,7 +58,7 @@ Orjinal betikte en fazla 25 yazı dışarı aktarılabiliyordu ve ben 200ün üz
 <br />**c - Yazı tarih sorunu**
 Yazının ilk yayınlanma tarihini değil de güncellenme tarihini çekiyordu bu yüzden kalıcı bağlantılar oluşturulurken hata meydana geliyordu ben bunu ilk yayınlanma tarihi olarak değiştirdim.
 <br />Blogger sabit sayfalarını dışarı aktarmak için kullanılacak feed adresi **zaferzent.com/feeds/pages/default**<br />
-Migrate.rb dosyasını github adresimden indirebilirsiniz : **[migrate.rb](github.com/zaferzent/migrate.rb)**
+Migrate.rb dosyasını github adresimden indirebilirsiniz : **[migrate.rb](https://github.com/zaferzent/migrate.rb)**
 <br />
 
 3 - Blogger Yorumlarını Disqus'a, Disqus'tan Jekyll'e Aktarma
