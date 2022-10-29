@@ -1,7 +1,7 @@
 ---
-published: false
+published: true
 layout: post
-date: '2022-10-29 00:10 Europe/Istanbul'
+date: '2022-10-29 00:40 Europe/Istanbul'
 comments: true
 categories:
   - Blogger
@@ -10,7 +10,7 @@ tags:
   - jekyll
   - blogger
   - blogspot
-permalink: /bloggerdan-jekylle-gecis-rehberi
+permalink: /bloggerdan-jekylle-sureci
 draft: true
 title: Blogger'dan Jekyll'e Geçiş Süreci
 ---
@@ -35,6 +35,14 @@ Aslında en ince ayrıntısına kadar tüm süreci yazmak isterdim fakat araya g
 1 - Jekyll kurulum ve github üzerinde yayına alma
 ------
 Jekyll'in kurulumu ve github üzerinde yayına almak için çok fazla kaynak var. Ben ingilizce veya Türkçe dilinde çokla fazla kaynak inceledim. Fakat ingilizce kaynaklarla çok fazla zaman kaybetmek istemiyorsanız youtube üzerinde bulunan ve gayet anlaşılır bir anlatıma sahip olan [Yazılım - DEV](https://www.youtube.com/channel/UCinNBqUVs98p-t-fzJ870HA/videos) kanalının videolarından yararlanabilirsiniz.
+
+Ek olarak kurulum ve zaferzent.github.io şeklinde yayına alma işleminden sonra iki farklı kaynaktan yararlandım bunlar :
+
+- [How to add custom domain to your jekyll blog - provided that you built your site using github pages
+](https://medium.com/@xiang_zhou/how-to-add-custom-domain-to-your-jekyll-blog-provided-that-you-built-your-site-using-github-6e1c8bf20afe) 
+
+- [Managing a custom domain for your GitHub Pages site](
+https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
 2 - Blogger yazılarını Jekyll'e Uygun(markdown olarak) dışarı aktarma
 ------
@@ -71,6 +79,10 @@ Yaşadığım diğer sorunlardan birisi de yazı bağlantılarından dolayı 404
 ------
 Jekyll'de tema seçeneği çok fakat bir çoğu aynı yapıdalar. Ben de uygun, kullanışlı bir tema bulamayınca hali hazırda Blogger'da kullandığım temayı uyarlayıp kullanmaya başladım. Jekyll tema yapısı biraz farklı, aslında kolay bir yapısı olmasına rağmen tecrübesizlikten dolayı biraz uğraşmak zorunda kaldım.
 
-Genel olarak
+Genel olarak geçiş sürecinde not aldığım ve aklıma gelenler bunlar, eksiklikler olabilir zaman geçtikçe aklıma gelen bir şeyler olursa ekleme yapabilirim. Blogger'dan Jekyll'e geçmek isteyenler için umarım faydalı bir içerik olmuştur.##
+
+
+
+
 
 
