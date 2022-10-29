@@ -25,10 +25,8 @@ Jekyll Nedir ?
 Neden Jekyll'e Geçiş Yaptım ?
 ------
 Daha önce de [Bloğumu Taşıyorum](/2022/08/blogumu-tasiyorum.html) yazısında belirttiğim gibi Blogger'ın bir türlü gerek şablon yapısı gerek diğer geliştirmeler olsun artık çok geride kalması oldu. Tabi burada en önemli sebep Google'un herhagi bir kazanç sağlamadığı bir servis için çok fazla destek veya geliştirme yapmasını beklemiyorduk. Fakat en azından biraz daha fazla özgürlük sağlayabilirdi.
-
-Ayrıca son zamanlarda artık bir değişikliğe gitmenin zamanın geldiğini iyiden iyiye düşünmeye başlamıştım ve bu süreçte Statik site oluşturuculara merakım hayli ile artmıştı. 
-
-Jekyll, Hugo, Hexo gibi statik site oluşturucularını son zamanlarda inceleme ve test etme fırsatım oldu. Bunlardan özellikle Jekyll bana daha cazip geldi.
+<br />Ayrıca son zamanlarda artık bir değişikliğe gitmenin zamanın geldiğini iyiden iyiye düşünmeye başlamıştım ve bu süreçte Statik site oluşturuculara merakım hayli ile artmıştı. 
+<br />Jekyll, Hugo, Hexo gibi statik site oluşturucularını son zamanlarda inceleme ve test etme fırsatım oldu. Bunlardan özellikle Jekyll bana daha cazip geldi.
 <br />
 
 Adım adım Jekyll'e Geçiş Rehberi ?
@@ -39,8 +37,7 @@ Aslında en ince ayrıntısına kadar tüm süreci yazmak isterdim fakat araya g
 1 - Jekyll kurulum ve github üzerinde yayına alma
 ------
 Jekyll'in kurulumu ve github üzerinde yayına almak için çok fazla kaynak var. Ben ingilizce veya Türkçe dilinde çokla fazla kaynak inceledim. Fakat ingilizce kaynaklarla çok fazla zaman kaybetmek istemiyorsanız youtube üzerinde bulunan ve gayet anlaşılır bir anlatıma sahip olan [Yazılım - DEV](https://www.youtube.com/channel/UCinNBqUVs98p-t-fzJ870HA/videos) kanalının videolarından yararlanabilirsiniz.
-<br />
-Ek olarak kurulum ve zaferzent.github.io şeklinde yayına alma işleminden sonra iki farklı kaynaktan yararlandım bunlar :
+<br />Ek olarak kurulum ve zaferzent.github.io şeklinde yayına alma işleminden sonra iki farklı kaynaktan yararlandım bunlar :
 
 - **[How to add custom domain to your jekyll blog - provided that you built your site using github pages
 ](https://medium.com/@xiang_zhou/how-to-add-custom-domain-to-your-jekyll-blog-provided-that-you-built-your-site-using-github-6e1c8bf20afe)**
@@ -53,20 +50,15 @@ https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pag
 ------
 Bu aşama için [dev.to/rupeshtiwari/importing-wordpress-or-blogger-blogs-to-jekyll-blog-mpg](https://dev.to/rupeshtiwari/importing-wordpress-or-blogger-blogs-to-jekyll-blog-mpg) adresindeki yazıdan yararlandım. Bu yazıda yer alan migrate.rb betiği bir nimet niteliğinde çünkü bulduğum bir çok diğer araç veya betik hep sorun çıkardı. Fakat bu betiğin bazı eksik veye hatalı yönleri bulunuyordu biraz uğraşarak bunları giderdim.<br />
 Migrate.rb betiğinin düzelttiğim eksiklikleri veya sorunları : 
-<br />
-**a - Kalıcı bağlantı sorunu**
+<br />**a - Kalıcı bağlantı sorunu**
 Migrate.rb betiği ingilizce dili hesap edilerek yazıldığı için doğal olarak kalıcı bağlantılarda Türkçe karakter sorunu yaşatıyordu. Yani "Fıstıkçı Şahap" başlığına sahip bir yazımız varsa bunun bağlantısını "fstk-ahap" şeklinde eksik ve hatalı bir şekilde oluşturuyordu. Artık düzgün bir şekilde çalışıyor.
-<br />
-**b - Eksik dışarı aktarma işlemi**
+<br />**b - Eksik dışarı aktarma işlemi**
 Orjinal betikte en fazla 25 yazı dışarı aktarılabiliyordu ve ben 200ün üzerinde yazıya sahiptim. Ben bunu farklı bir yöntem kullanarak düzeltme işlemi yaptım. **zaferzent.com/feeds/posts/default/-/Blogger?orderby=updated&max-results=9999** etiket besleme adresi üzerinden dışarı aktarma işlemi yaptım. Betik içerisindeki besleme adresi ve betik çalıştırılırken girilen besleme adresi aynı olmalı.
-<br />
-Betik kullanımı dev.to adresi ile baylaştığım yazıda mevcut. Özet olarak Komut istemi üzerinden çalıştıran komuttaki besleme adresi betik içerisindeki besleme adresi aynı olacak ve ruby **migrate.rb https://www.zaferzent.com/feeds/posts/default/-/Blogger?orderby=updated&max-results=9999** olarak komut çalıştırılacak. Diğer önemli bir konu varolan blogger bloğundaki tüm yazılar etikete sahip olmalı ve etiket sayısı mümkün olduğunca az ve etiketlerde Türkçe karakter olmamalı. Çünkü her etikete ait yazıları ayrı ayrı betik dosyasına eklenerek ve komut verilerek dışarı aktarma işlemi yapılıyor.
-<br />
-**c - Yazı tarih sorunu**
+<br />Betik kullanımı dev.to adresi ile baylaştığım yazıda mevcut. Özet olarak Komut istemi üzerinden çalıştıran komuttaki besleme adresi betik içerisindeki besleme adresi aynı olacak ve ruby **migrate.rb https://www.zaferzent.com/feeds/posts/default/-/Blogger?orderby=updated&max-results=9999** olarak komut çalıştırılacak. Diğer önemli bir konu varolan blogger bloğundaki tüm yazılar etikete sahip olmalı ve etiket sayısı mümkün olduğunca az ve etiketlerde Türkçe karakter olmamalı. Çünkü her etikete ait yazıları ayrı ayrı betik dosyasına eklenerek ve komut verilerek dışarı aktarma işlemi yapılıyor.
+<br />**c - Yazı tarih sorunu**
 Yazının ilk yayınlanma tarihini değil de güncellenme tarihini çekiyordu bu yüzden kalıcı bağlantılar oluşturulurken hata meydana geliyordu ben bunu ilk yayınlanma tarihi olarak değiştirdim.
-<br />Blogger sabit sayfalarını dışarı aktarmak için kullanılacak feed adresi **zaferzent.com/feeds/pages/default**
-<br />
-Migrate.rb dosyasını github adresimden indirebilirsiniz : github.com/zaferzent/migrate.rb
+<br />Blogger sabit sayfalarını dışarı aktarmak için kullanılacak feed adresi **zaferzent.com/feeds/pages/default**<br />
+Migrate.rb dosyasını github adresimden indirebilirsiniz : [migrate.rb](github.com/zaferzent/migrate.rb)
 <br />
 
 3 - Blogger Yorumlarını Disqus'a, Disqus'tan Jekyll'e Aktarma
