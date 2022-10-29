@@ -47,17 +47,19 @@ Ek olarak kurulum ve zaferzent.github.io şeklinde yayına alma işleminden sonr
 
 - **[Managing a custom domain for your GitHub Pages site](
 https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)**
-
 <br />
+
 2 - Blogger yazılarını Jekyll'e Uygun(markdown olarak) dışarı aktarma
 ------
 Bu aşama için [dev.to/rupeshtiwari/importing-wordpress-or-blogger-blogs-to-jekyll-blog-mpg](https://dev.to/rupeshtiwari/importing-wordpress-or-blogger-blogs-to-jekyll-blog-mpg) adresindeki yazıdan yararlandım. Bu yazıda yer alan migrate.rb betiği bir nimet niteliğinde çünkü bulduğum bir çok diğer araç veya betik hep sorun çıkardı. Fakat bu betiğin bazı eksik veye hatalı yönleri bulunuyordu biraz uğraşarak bunları giderdim.
 <br />
 Migrate.rb betiğinin düzelttiğim eksiklikleri veya sorunları : 
 <br />
+
 **a - Kalıcı bağlantı sorunu**
 Migrate.rb betiği ingilizce dili hesap edilerek yazıldığı için doğal olarak kalıcı bağlantılarda Türkçe karakter sorunu yaşatıyordu. Yani "Fıstıkçı Şahap" başlığına sahip bir yazımız varsa bunun bağlantısını "fstk-ahap" şeklinde eksik ve hatalı bir şekilde oluşturuyordu. Artık düzgün bir şekilde çalışıyor.
 <br />
+
 **b - Eksik dışarı aktarma işlemi**
 Orjinal betikte en fazla 25 yazı dışarı aktarılabiliyordu ve ben 200ün üzerinde yazıya sahiptim. Ben bunu farklı bir yöntem kullanarak düzeltme işlemi yaptım. **zaferzent.com/feeds/posts/default/-/Blogger?orderby=updated&max-results=9999** etiket besleme adresi üzerinden dışarı aktarma işlemi yaptım. Betik içerisindeki besleme adresi ve betik çalıştırılırken girilen besleme adresi aynı olmalı.
 <br />
