@@ -1,3 +1,6 @@
+---
+published: false
+---
 ---           
 layout: post
 title: Bloğumu Taşıyorum
@@ -7,14 +10,10 @@ comments: false
 categories: Blog
 ---
 Blogger'a artık vedalaşma zamanının geldiğini hatta geçtiğini düşünmeye başladım son zamanlarda. En büyük sebeplerden birisi de yıllardır şablon yapısının değişmemesi, yeterli geliştirmelerin yapılmaması, tam olarak bir özgürlük sağlamamasıydı. Bir süredir Jekyll, Hugo gibi statik bir site oluşturucu yazılımına geçme düşüncem vardı. Fakat gerek tecrübesizlik, gerek bilgi eksiliği yüzünden bu düşüncem hep yarım kaldı. Artık hatalarla sorunlarla bir şekilde geçişi tamamlamayı düşünüyorum.  
-\\
-Geçiş sürecinde, bir süreliğine bu blogda eksiklikler, hatalar veya farklı şeyler görülebilir.  
-\\
-Birkaç gündür çalışmalara başlamış olsam da çok karışık bir süreç olduğu için biraz zaman alacak gibi görünüyor. Bu yüzden belki bir süreliğine bloğa tamamen erişim bile kesilebilir.  
-\\
-Bu taşınma esnasında bu tarz yazılımları kullanan(Jekyll, Hugo gibi), daha önceleri böyle farklı platformlardan geçiş yapan tecrübeli arkadaşlar var ise altta yazdığım maddeler ile alakalı görüş bekliyorum.  
-\\
-Karşılaştığım bazı sorun veya sorular:  
+<br />Geçiş sürecinde, bir süreliğine bu blogda eksiklikler, hatalar veya farklı şeyler görülebilir.  
+<br />Birkaç gündür çalışmalara başlamış olsam da çok karışık bir süreç olduğu için biraz zaman alacak gibi görünüyor. Bu yüzden belki bir süreliğine bloğa tamamen erişim bile kesilebilir.  
+<br />Bu taşınma esnasında bu tarz yazılımları kullanan(Jekyll, Hugo gibi), daha önceleri böyle farklı platformlardan geçiş yapan tecrübeli arkadaşlar var ise altta yazdığım maddeler ile alakalı görüş bekliyorum.  
+<br />Karşılaştığım bazı sorun veya sorular:  
 1 - Blogger yayınlarının yedeğini sorunsuz bir şekilde aktarmak.  
 \* Yazıları bir şekilde aktarabiliyorum fakat Türkçe karakter içeren başlıklar küçük "ı" vs olduğu gibi kalıcı bağlantıya dönüştürdüğü için 404 hata sayfaları ile karşılaşmak istemiyorum. Aslında manuel olarak çözülebilir bir durum ama daha kolay bir yöntem arıyorum.  
 2 - Blogger'daki yorumları Disqus'a aktarıp bu yazılımlarda sorunsuz kullanabilir miyim ?  
