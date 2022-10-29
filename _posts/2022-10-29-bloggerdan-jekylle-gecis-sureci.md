@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-date: '2022-10-29 00:40 Europe/Istanbul'
+date: '2022-10-30 00:40 Europe/Istanbul'
 comments: true
 categories:
   - Blogger
