@@ -25,7 +25,7 @@ Jekyll Nedir ?
 
 Neden Jekyll'e Geçiş Yaptım ?
 ------
-Daha önce de [Bloğumu Taşıyorum](/2022/08/blogumu-tasiyorum.html) {:class="link"} yazısında belirttiğim gibi Blogger'ın bir türlü gerek şablon yapısı gerek diğer geliştirmeler olsun artık çok geride kalması oldu. Tabi burada en önemli sebep Google'un herhagi bir kazanç sağlamadığı bir servis için çok fazla destek veya geliştirme yapmasını beklemiyorduk. Fakat en azından biraz daha fazla özgürlük sağlayabilirdi.
+Daha önce de [Bloğumu Taşıyorum](/2022/08/blogumu-tasiyorum.html){:class="link"} yazısında belirttiğim gibi Blogger'ın bir türlü gerek şablon yapısı gerek diğer geliştirmeler olsun artık çok geride kalması oldu. Tabi burada en önemli sebep Google'un herhagi bir kazanç sağlamadığı bir servis için çok fazla destek veya geliştirme yapmasını beklemiyorduk. Fakat en azından biraz daha fazla özgürlük sağlayabilirdi.
 <br />Ayrıca son zamanlarda artık bir değişikliğe gitmenin zamanın geldiğini iyiden iyiye düşünmeye başlamıştım ve bu süreçte Statik site oluşturuculara merakım hayli ile artmıştı. 
 <br />Jekyll, Hugo, Hexo gibi statik site oluşturucularını son zamanlarda inceleme ve test etme fırsatım oldu. Bunlardan özellikle Jekyll bana daha cazip geldi.
 <br />
