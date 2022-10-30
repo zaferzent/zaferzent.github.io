@@ -19,7 +19,7 @@ Yakın zamanda uzun ve zorlu bir süreç sonunda Blogger'dan Jekyll'e geçiş ya
 
 Jekyll Nedir ?
 ------
-[Jekyll](https://jekyllrb.com) statik bir site oluşturucu yazılımı. Statikten kasıt bir veritabanı sistemi ve bir yönetim paneli gibi argümanların bulunmaması. İçerikler oluşturulurken markdown formatında oluşturuluyor(Markdown HTML etiketlerine göre daha kısa ve kolay bir kullanım sağlıyor) ve Jekyll bunu HTML sayfalara dönüştürek içeriğin görüntülenmesini sağlıyor. Markdown hakkında bilgi almak ve HTML'den farkı nedir öğrenmek için [Markdown](https://tr.wikipedia.org/wiki/Markdown) adresine bakılabilir.
+[Jekyll](https://jekyllrb.com) statik bir site oluşturucu yazılımı. Statikten kasıt bir veritabanı sistemi ve bir yönetim paneli gibi argümanların bulunmaması. İçerikler oluşturulurken markdown formatında oluşturuluyor(Markdown HTML etiketlerine göre daha kısa ve kolay bir kullanım sağlıyor) ve Jekyll bunu HTML sayfalara dönüştürek içeriğin görüntülenmesini sağlıyor. Markdown hakkında bilgi almak ve HTML'den farkı nedir öğrenmek için [Markdown](https://tr.wikipedia.org/wiki/Markdown){:class="link"} adresine bakılabilir.
 <br />
 
 Neden Jekyll'e Geçiş Yaptım ?
