@@ -15,7 +15,7 @@ draft: true
 title: Blogger'dan Jekyll'e Geçiş Süreci
 image: assets/images/jekyll.png
 ---
-![Jekyll]({{site.baseurl}}//assets/images/jekyll.png)
+![Jekyll]({{site.baseurl}}/assets/images/jekyll.png)
 
 Yakın zamanda uzun ve zorlu bir süreç sonunda Blogger'dan Jekyll'e geçiş yapmıştım ve konu ile alakalı kısa bir bilgilenedirme paylaşmıştım. Bu yazımda ise nasıl geçiş yaptım, nasıl sorunlarla karşılaştım, iyi mi yaptım, kötü mü yaptım ile alakalı elim döndüğünce rehber niteliğinde bir şeyler paylaşacağım.
 <br />
