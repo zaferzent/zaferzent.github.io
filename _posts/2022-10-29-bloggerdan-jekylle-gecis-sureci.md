@@ -36,7 +36,7 @@ Aslında en ince ayrıntısına kadar tüm süreci yazmak isterdim fakat araya g
 
 1 - Jekyll kurulum ve github üzerinde yayına alma
 ------
-Jekyll'in kurulumu ve github üzerinde yayına almak için çok fazla kaynak var. Ben ingilizce veya Türkçe dilinde çokla fazla kaynak inceledim. Fakat ingilizce kaynaklarla çok fazla zaman kaybetmek istemiyorsanız youtube üzerinde bulunan ve gayet anlaşılır bir anlatıma sahip olan [Yazılım - DEV](https://www.youtube.com/channel/UCinNBqUVs98p-t-fzJ870HA/videos) kanalının videolarından yararlanabilirsiniz.
+Jekyll'in kurulumu ve github üzerinde yayına almak için çok fazla kaynak var. Ben ingilizce veya Türkçe dilinde çokla fazla kaynak inceledim. Fakat ingilizce kaynaklarla çok fazla zaman kaybetmek istemiyorsanız youtube üzerinde bulunan ve gayet anlaşılır bir anlatıma sahip olan [Yazılım - DEV](https://www.youtube.com/channel/UCinNBqUVs98p-t-fzJ870HA/videos){:class="link"} kanalının videolarından yararlanabilirsiniz.
 <br />Ek olarak kurulum ve zaferzent.github.io şeklinde yayına alma işleminden sonra iki farklı kaynaktan yararlandım bunlar :
 
 - **[How to add custom domain to your jekyll blog - provided that you built your site using github pages
@@ -48,7 +48,7 @@ https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pag
 
 2 - Blogger yazılarını Jekyll'e Uygun(markdown olarak) dışarı aktarma
 ------
-Bu aşama için [dev.to/rupeshtiwari/importing-wordpress-or-blogger-blogs-to-jekyll-blog-mpg](https://dev.to/rupeshtiwari/importing-wordpress-or-blogger-blogs-to-jekyll-blog-mpg) adresindeki yazıdan yararlandım. Bu yazıda yer alan migrate.rb betiği bir nimet niteliğinde çünkü bulduğum bir çok diğer araç veya betik hep sorun çıkardı. Fakat bu betiğin bazı eksik veye hatalı yönleri bulunuyordu biraz uğraşarak bunları giderdim.<br />
+Bu aşama için **[dev.to/rupeshtiwari/importing-wordpress-or-blogger-blogs-to-jekyll-blog-mpg](https://dev.to/rupeshtiwari/importing-wordpress-or-blogger-blogs-to-jekyll-blog-mpg)** adresindeki yazıdan yararlandım. Bu yazıda yer alan migrate.rb betiği bir nimet niteliğinde çünkü bulduğum bir çok diğer araç veya betik hep sorun çıkardı. Fakat bu betiğin bazı eksik veye hatalı yönleri bulunuyordu biraz uğraşarak bunları giderdim.<br />
 Migrate.rb betiğinin düzelttiğim eksiklikleri veya sorunları : 
 <br />**a - Kalıcı bağlantı sorunu**
 Migrate.rb betiği ingilizce dili hesap edilerek yazıldığı için doğal olarak kalıcı bağlantılarda Türkçe karakter sorunu yaşatıyordu. Yani "Fıstıkçı Şahap" başlığına sahip bir yazımız varsa bunun bağlantısını "fstk-ahap" şeklinde eksik ve hatalı bir şekilde oluşturuyordu. Artık düzgün bir şekilde çalışıyor.
@@ -58,7 +58,7 @@ Orjinal betikte en fazla 25 yazı dışarı aktarılabiliyordu ve ben 200ün üz
 <br />**c - Yazı tarih sorunu**
 Yazının ilk yayınlanma tarihini değil de güncellenme tarihini çekiyordu bu yüzden kalıcı bağlantılar oluşturulurken hata meydana geliyordu ben bunu ilk yayınlanma tarihi olarak değiştirdim.
 <br />Blogger sabit sayfalarını dışarı aktarmak için kullanılacak feed adresi **zaferzent.com/feeds/pages/default**<br />
-Migrate.rb dosyasını github adresimden indirebilirsiniz : **[migrate.rb](https://github.com/zaferzent/migrate.rb)**
+Migrate.rb dosyasını github adresimden indirebilirsiniz : [migrate.rb](https://github.com/zaferzent/migrate.rb){:class="link"}
 <br />
 
 3 - Blogger Yorumlarını Disqus'a, Disqus'tan Jekyll'e Aktarma
