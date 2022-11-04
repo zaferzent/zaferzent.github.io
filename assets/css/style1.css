@@ -1,3 +1,8 @@
+.blog p{    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;}
 /* Comments */
 #comments h4{margi-top:20px; margin-bottom:20px}
 #comments ol li{list-style:none}
