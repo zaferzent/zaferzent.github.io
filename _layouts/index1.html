@@ -64,13 +64,7 @@ Copyright © {{site.title}}. All rights reserved.
 </div>
 </div>
   
-  <script>
-  if('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
-    })
-  }
-</script>
+
 <script>
 const body=document.body
 const btnTheme=document.querySelector('.fa-moon')
@@ -105,5 +99,14 @@ document.addEventListener('scroll',scrollUp)
 <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap' rel='stylesheet'/>
 <script crossorigin='anonymous' src='https://kit.fontawesome.com/fa62c117c7.js'></script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  
+    <script>
+  if('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+    })
+  }
+</script>
+  
 </body>
 </html>
