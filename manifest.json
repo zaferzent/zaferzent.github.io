@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Web Günlüğü",
+  "background_color": "#000",
+  "theme_color": "#00a880",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "blogger ipuçları, eklentileri ve temalarının yer aldığı web günlüğüs",
+  "icons": [{
+    "src": "https://2.bp.blogspot.com/-iRw0N45WUJc/WB0KKS2d1yI/AAAAAAAAF3Q/JkjC3gTCSesp554xMoP95Zn0A1n74w7wwCLcB/s1600/logoNewRoundWeb.png",
+    "sizes":"any",
+    "type": "image/svg+xml"
+  }]
+}
