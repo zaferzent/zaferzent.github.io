@@ -8,7 +8,7 @@ const { CacheFirst, NetworkFirst, StaleWhileRevalidate } = workbox.strategies;
 const { CacheableResponse } = workbox.cacheableResponse;
 
 workbox.core.setCacheNameDetails({
-  prefix: 'svrooij.io',
+  prefix: 'zaferzent.com',
   suffix: '{{ site.time | date: "%Y-%m" }}'
 });
 
@@ -34,7 +34,7 @@ workbox.precaching.precacheAndRoute([
   { url: '/', revision: '{{ site.time | date: "%Y%m%d%H%M" }}' },
   { url: '/page2', revision: '{{ site.time | date: "%Y%m%d%H%M" }}' },
   { url: '/page3', revision: '{{ site.time | date: "%Y%m%d%H%M" }}' },
-  { url: '/assets/css/index.css', revision: '{{ site.time | date: "%Y%m%d%H%M" }}' }
+  { url: '/assets/css/style1.css', revision: '{{ site.time | date: "%Y%m%d%H%M" }}' }
 ])
 
 registerRoute(
@@ -47,6 +47,6 @@ registerRoute(
 );
 
 registerRoute(
-  /assets\/(images|icons|css)/,
+  /assets\/(images|css)/,
   new CacheFirst()
 );
