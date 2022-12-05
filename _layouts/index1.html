@@ -63,6 +63,14 @@ Copyright © {{site.title}}. All rights reserved.
 </a>
 </div>
 </div>
+  
+  <script>
+  if('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+    })
+  }
+</script>
 <script>
 const body=document.body
 const btnTheme=document.querySelector('.fa-moon')
