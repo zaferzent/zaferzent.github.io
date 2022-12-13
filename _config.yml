@@ -6,7 +6,7 @@ permalink: ":year/:month/:slug.html"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 author: Sal
-paginate: 30
+paginate: 5
 disqus: 'webgunlugu-1'
 locale: en_us
 lang: en_us
