@@ -7,7 +7,7 @@ background:
 ================================================== -->
 <section class='section blogs' id='blogs'>
   <div class='blog__grid section' id='_posts'>
-      {% for post in paginator.posts limit:4 %}
+      {% for post in paginator.posts %}
       {% unless post.featured == false %}
         {% include postbox2.html %}
       {% endunless %}
