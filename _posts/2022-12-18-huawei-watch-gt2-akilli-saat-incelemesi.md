@@ -25,9 +25,12 @@ title: Huawei Watch GT2 Akıllı Saat İncelemesi
 ## En çok dikkat ettiğim özellikler neydi?
 - Sesli görüşme (Sesli görüşme yapılacak kişiler telefon üzerinden Huawei Health uygulamasından maksimum 10 kişiye kadar eklenebiliyor. 
 )<br />
+
 - Tam içerikli bildirim veya mesajlar (Bazı bileklik veya saatler bildirim ve mesajları kırpılmış şekilde gösteriyor bu modelde tam metin gösteriyor fakat resim veya emojiler görünmüyor)<br />
+
 - Şarj (Normal kullanımda 1 hafta gittiği söyleniyor, kime göre ve neye göre bilmiyorum ama benim bu kullanım durumuma göre 1 haftayı bulur mu geçer mi henüz tecrübe edinmedim. 15.12.22 saat 23:03 şarj  %15'deyken şarja taktım ve yaklaşık 1 saat gibi bir sürede tam şarj oldu. (Kullandığım şarj adaptörü hızlı şarj destekli). Telefona sürekli bağlı, yaptığım sesli görüşme süresi toplamda 1 saat 23 dakika, "ekran her zaman açık", "saati hep göster" ve "sürekli kalp atış hızı ölçme" özellikleri kapalı, titreşim hafif düzeyde, Whatsapp, SMS, Gmail, Instagram uygulamalarından 10-15 bildirim geliyor, Günde yaklaşık 10000 adım atıyorum, bunun şarja ne kadar etkisi var bilmiyorum. An itibariyle 18.12.22 01:10 şarj %70.)
 <br />
+
 Saat ile ilgili tüm özelliklere bu [https://consumer.huawei.com/tr/wearables/watch-gt2/specs/](https://consumer.huawei.com/tr/wearables/watch-gt2/specs/) bağlantıdan ulaşabilirsiniz.
 
 ## Satın alma, teslim ve ilk gün deneyimi
@@ -53,22 +56,16 @@ Kadran yani saat görünümü haricinde  maksimum 6 adet ekran eklenebiliyor. Bu
 
 ## Ana Ekran ve Tuşlar
 Ekran yukarıdan aşağı kaydırıldığında Ayarlar, Boşalt, Telefonumu bul, rahatsız etmeyin, alarm, saati hep göster seçenekleri çıkıyor.
-
 <br />
 Ekran alttan yukarı çekildiğinde bildirimler görünüyor.
-
 <br />
 Ana ekrandayken sağdan veya soldan çekildiğinde diğer ekranlara geçiş yapılıyor.
-
 <br />
 Sağ üst tuşa saat ekranında iken basıldığında tüm uygulamalar listesi açılıyor. Fakat herhangi bir uygulama veya ekran içerisindeyken basıldığında ana ekrana dönüyor.
-
 <br />
 Ana ekranda kadran basılı tutulduğunda önyüklü diğer kadranlar görüntüleniyor.
-
 <br />
 Sağ alt tuşa herhangi bir uygulama direkt atanabiliyor. Bunun için Ayarlar  • Aşağı tuş bölümüne girilmesi gerekli ben Kişiler'i atadım.
-
 <br />
 Herhangi bir uygulama veya ayarlar içerisindeyken ekranın solundan sağa doğru parmak kaydırıldığında bir önceki menü veya bir önceki sayfaya geri geliyor, fakat sağdan parmak çekildiğinde herhangi bir işlem olmuyor.
 <br />
@@ -83,30 +80,28 @@ Genel olarak sunduğu özellikler ve kolaylıklar boyut itibari ile yeterli beni
 <br />
 
 ## Saat ile ilgili olası soru ve cevaplar
-Saatin tam marka/modeli nedir ?<br />
+Saatin tam marka/modeli nedir ?
 Huawei Watch GT 2 46mm Sport Edition
 <br />
-Saatin Türkçe desteği var mı?<br />
+Saatin Türkçe desteği var mı?
 Evet var. İlk kurulum ekranında seçilebiliyor.
 <br />
-Saat telefona Bluetooth ile bağlı değilken güncel saati gösteriyor mu ? <br />
+Saat telefona Bluetooth ile bağlı değilken güncel saati gösteriyor mu ? 
 Evet, telefona bağlı olmasa da güncel saati gösteriyor.
 <br />
-Su geçirmez özelliği var mı geçiriyor mu ?<br />
+Su geçirmez özelliği var mı geçiriyor mu ?
 Saat ile duşa girmedim fakat el yıkama vs durumda bir sorun yaşamadım.
 <br />
-Mesajlara cevap veriliyor mu ?<br />
+Mesajlara cevap veriliyor mu ?
 Hayır.
 <br />
 Bluetooth bağlantısında kesilmeler oluyor mu ?
 Evet arada bir oluyor.
 <br />
-Fiyat ne kadar ?<br />
+Fiyat ne kadar ?
 2500 - 3000 TL arasında
 <br />
 Tavsiye ediyor muyum ?<br />
 YTD :). Bütçe ve isteğe göre değişebilir yönlendirme yapmak istemem.
 
-__Zamanla saat ile ilgili yaşadığım deyenimleri yazıyı güncelleyerek paylaşmaya çalışacağım.
-
-
+*Zamanla saat ile ilgili yaşadığım deyenimleri yazıyı güncelleyerek paylaşmaya çalışacağım.
