@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: '2022-12-18 00:40 Europe/Istanbul'
 comments: true
@@ -11,7 +11,7 @@ tags:
   - huawei watch
 permalink: /huawei-watch-gt2-akilli-saat-incelemesi
 draft: true
-image: assets/images/jekyll.png
+image: assets/images/huawei-watch-gt2-sport-edition-inceleme-yazisi.jpg
 title: Huawei Watch GT2 Akıllı Saat İncelemesi
 ---
 ![Huawei Watch GT2]({{site.baseurl}}/assets/images/huawei-watch-gt2-sport-edition-inceleme-yazisi.jpg) <br />2017'de düşürüp kaybettiğim [Xiaomi bileklik](/2017/01/xiaomi-mi-band-2-akilli-bileklik-incelemesi.html "Xiaomi Mi Band 2")ten uzun bir zaman sonra tekrar bir akıllı saat/bileklik alma düşüncem vardı. Düşündüğüm fiyat/özellik segmentinde 2-3 marka/model vardı. Sesli görüşme özelliği olan, tasarım ve detaylı diğer araştırmalarım sonucunda [Huawei Watch GT2](/huawei-watch-gt2-akilli-saat-incelemesi "Huawei Watch GT2 İnceleme") modelinde karar kıldım. Bunun sonucunda gözlemlediklerim ve kendi yorumlarımrımla bir inceleme yazısı hazırladım.
