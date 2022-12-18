@@ -5,7 +5,7 @@ topmenu:
   url: ""
 
 - title: Hakkında
-  url: "p/hakkinda.html"
+  url: "hakkinda"
   
 - title: Arşiv
   url: "arsiv"
