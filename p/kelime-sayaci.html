@@ -8,7 +8,7 @@ categories:
 permalink : /p/kelime-sayaci.html
 ---
 <a href="/p/kelime-sayaci.html">Kelime sayacı</a>, kelime sayısını veya karakter sayısını anlık olarak hesaplayan bir araçtır.<br /><br /> <h3>Kullanımı : </h3><br />Herhangi bir yerde bulunan metin veya yazı içeriğinizin hepsini <b>CTRL + A</b> kısayolu ile seçip daha sonra <b>CTRL + C</b> ile kopyalayıp son olarak bu kutu içerisine <b>CTRL + V</b> ile yapıştırdığınız takdirde  anlık olarak kelime ve karakter sayısını görebilirsiniz. <br /><br /><b>Uyarı</b> : Bu araç javascript ile hazırlanmıştır. Çeşitli reklam engelleyici uygulama veya tarayıcı eklentileri bazı javascript kodlarının çalışmasını engelleyebilmektedir. Eğer bu tip uygulamalar kullanıyorsanız pasif duruma getirmelisiniz. 
-
+<br />
 
 <script type="text/javascript">
 var calculate = function() {
@@ -18,8 +18,8 @@ var calculate = function() {
 };
 </script>
 
-<textarea id="input">Kelimeler.</textarea>
-<button onclick="calculate()">Hesapla</button>
+<textarea cols="80" rows="10" id="input">Kelimeler.</textarea><br />
+<button style="background:#f7f7f7; padding:5px" onclick="calculate()">Hesapla</button>
 <span id="count"></span> kelime
 
 
