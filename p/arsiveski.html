@@ -1,0 +1,22 @@
+---           
+layout: redirected
+sitemap: false
+title: Arşiv
+date: 2014-11-02 11:21:00 UTC
+updated: 2022-03-21 16:32:50 UTC
+comments: false
+categories: 
+permalink: /p/arsiv.html
+redirect_to: /arsiv
+---
+ <ul> 
+        {% for post in site.posts limit:250  %}
+        {% if forloop %}
+          <li style="    padding-bottom: 10px;
+          border-bottom: 1px dashed #ddd;
+          padding-top: 10px; width:100%; list-style-type: ; margin-left: px; font-size:13px">
+            <a class="" title="{{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
