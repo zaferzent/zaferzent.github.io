@@ -8,7 +8,7 @@ topmenu:
   url: "p/hakkinda.html"
   
 - title: Arşiv
-  url: "p/arsiv.html"
+  url: "arsiv"
 
 - title: Projeler
   url: "projeler"
