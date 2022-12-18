@@ -1,3 +1,7 @@
+---
+layout: default
+title: Archive
+---
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 <nav class="menu browse by-year text-center" aria-label="year">
   <strong aria-hidden="true">Jump to:</strong>
