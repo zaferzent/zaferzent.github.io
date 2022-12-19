@@ -35,3 +35,6 @@ sidebarmenu:
   
 - title: JPG, PNG >> WebP Dönüştürücü
   url: "jpg-png-webp-donusturucu"
+
+- title: Kelime Sayacı
+  url: "kelime-sayaci"
