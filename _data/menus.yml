@@ -31,7 +31,7 @@ footermenu:
 sidebarmenu:
 
 - title: Blogger Kod Dönüştürücü
-  url: "p/blogger-kod-donusturucu.html"
+  url: "blogger-kod-donusturucu"
   
 - title: JPG, PNG >> WebP Dönüştürücü
   url: "jpg-png-webp-donusturucu"
