@@ -157,4 +157,4 @@ pre{padding:10px;overflow:auto;font-size:15px;background:#f7f7f7}
 
 .footer > li{list-style:none !important}
 
-input#button{background: var(--clr-primary); color: #fff;   padding: 7px;  margin: 10px;    border: none;    border-radius: 3px;}
+input[type=button], input[type=submit], input[type=reset]{background: var(--clr-primary); color: #fff;   padding: 7px;  margin: 10px;    border: none;    border-radius: 3px;}
