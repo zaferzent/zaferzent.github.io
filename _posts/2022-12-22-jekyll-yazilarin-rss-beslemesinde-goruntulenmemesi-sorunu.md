@@ -11,7 +11,8 @@ permalink: /jekyll-yazilarin-rss-beslemesinde-goruntulenmemesi-sorunu
 image: assets/images/jekyll-meta-data.jpeg
 title: Jekyll Yazıların RSS Beslemesinde Görüntülenmemesi Sorunu
 ---
-![Jekyll RSS Feed]({{site.baseurl}}/assets/images/jekyll-rss-feed.png)Bugün rss beslemesi ile alakalı bir işlem yaparken son yayımladığım iki yazının RSS beslemesinde görüntülenmediğini farkettim. Üzerinde uzun bir düşündüm, uğraştım, araştırdım. Aklıma ilk gelen kodlarla uğraşırken bir hata yapmış olabileceğimdi, ama kodlarla alakalı da bir sorun yoktu. Belki geç görüntülenir diye düşündüm, ama son yazıyı geçtim neden 2 ay önce yayımlanmış bir yazı RSS beslemesine düşmedi. 
+![Jekyll RSS Feed]({{site.baseurl}}/assets/images/jekyll-rss-feed.png)
+Bugün rss beslemesi ile alakalı bir işlem yaparken son yayımladığım iki yazının RSS beslemesinde görüntülenmediğini farkettim. Üzerinde uzun bir düşündüm, uğraştım, araştırdım. Aklıma ilk gelen kodlarla uğraşırken bir hata yapmış olabileceğimdi, ama kodlarla alakalı da bir sorun yoktu. Belki geç görüntülenir diye düşündüm, ama son yazıyı geçtim neden 2 ay önce yayımlanmış bir yazı RSS beslemesine düşmedi. 
 
 Biraz daha araştırma yapmaya karar vedim, yine ve yine Türkçe kaynaklarda bir çözüm bulamadım. Yabancı kaynaklara bakarken yine imdadıma Stackoverflow yetişti. Tabi **[Stackoverflow](https://stackoverflow.com/posts/30625045/revisions)**'da paylaşılan çözüm birebir benim yaşadığım sorun ile alakalı değildi fakat ben uygulayarak işe yaradığını görmüş oldum.
 
