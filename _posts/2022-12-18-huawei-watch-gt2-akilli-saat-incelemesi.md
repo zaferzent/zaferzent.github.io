@@ -10,7 +10,6 @@ tags:
   - akıllı saat
   - huawei watch
 permalink: /huawei-watch-gt2-akilli-saat-incelemesi
-draft: true
 image: assets/images/huawei-watch-gt2-sport-edition-inceleme-yazisi.jpg
 title: Huawei Watch GT2 Akıllı Saat İncelemesi
 ---
