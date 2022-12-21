@@ -8,7 +8,7 @@ categories:
 tags:
   - jekyll
 permalink: /jekyll-yazilarin-rss-beslemesinde-goruntulenmemesi-sorunu
-image: /assets/images/jekyll-meta-data.jpeg
+image: assets/images/jekyll-meta-data.jpeg
 title: Jekyll Yazıların RSS Beslemesinde Görüntülenmemesi Sorunu
 ---
 ![Jekyll RSS Feed]({{site.baseurl}}//assets/images/jekyll-rss-feed.png)
