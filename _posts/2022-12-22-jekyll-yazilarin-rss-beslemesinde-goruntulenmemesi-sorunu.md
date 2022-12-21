@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-date: '2022-12-18 00:40 Europe/Istanbul'
+date: '2022-12-22 00:40 Europe/Istanbul'
 comments: true
 categories:
   - Jekyll
@@ -9,6 +9,7 @@ tags:
   - jekyll
 permalink: /jekyll-yazilarin-rss-beslemesinde-goruntulenmemesi-sorunu
 image: assets/images/jekyll-meta-data.jpeg
+title: Jekyll Yazıların RSS Beslemesinde Görüntülenmemesi Sorunu
 ---
 ![Jekyll RSS Feed]({{site.baseurl}}//assets/images/jekyll-rss-feed.png)
 
