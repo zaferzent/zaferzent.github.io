@@ -11,7 +11,6 @@ tags:
   - blogger
   - blogspot
 permalink: /bloggerdan-jekylle-gecis-sureci
-draft: true
 title: Blogger'dan Jekyll'e Geçiş Süreci
 image: assets/images/jekyll.png
 ---
