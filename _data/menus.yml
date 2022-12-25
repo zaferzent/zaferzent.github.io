@@ -25,6 +25,12 @@ footermenu:
 
 - title: Gizlilik Politikası
   url: "p/gizlilik-politikasi.html"
+  
+- title: Feed
+  url: "feed.xml"
+  
+- title: Sitemap
+  url: "sitemap.xml"
 
 
 # Sidebar Menu
