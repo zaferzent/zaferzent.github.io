@@ -44,3 +44,14 @@ sidebarmenu:
 
 - title: Kelime Sayacı
   url: "kelime-sayaci"
+  
+  
+# Sidebar Menu 2
+sidebarmenu2:
+
+- title: Hesap Motoru
+  url: "https://www.hesapmotoru.com"
+  
+- title: ThemesLab
+  url: "https://www.themeslab.net"
+
