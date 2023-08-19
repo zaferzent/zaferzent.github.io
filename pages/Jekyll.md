@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /jekyll
+permalink: /kategori/jekyll
 title: "Jekyll"
 ---
 
