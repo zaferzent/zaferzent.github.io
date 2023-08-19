@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /blogger
+permalink: /kategori/blogger
 title: "Blogger"
 ---
 
