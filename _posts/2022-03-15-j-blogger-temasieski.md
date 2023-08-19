@@ -1,6 +1,5 @@
 ---           
 layout: redirected
-published: false
 title: J Blogger Teması
 date: 2022-03-15 22:51:00 UTC
 updated: 2022-08-26 17:11:43 UTC
