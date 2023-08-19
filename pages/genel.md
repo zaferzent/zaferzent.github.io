@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /genel
-title: "Genel" kategorisine ait yazılar
+title: "Genel kategorisine ait yazılar"
 ---
 
 <div class="posts">
