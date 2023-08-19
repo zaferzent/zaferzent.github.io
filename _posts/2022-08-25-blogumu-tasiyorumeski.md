@@ -1,5 +1,6 @@
 ---
 layout: redirected
+published: false
 title: Bloğumu Taşıyorum
 date: '2022-08-25 22:24:00 UTC'
 updated: '2022-08-25 22:24:10 UTC'
