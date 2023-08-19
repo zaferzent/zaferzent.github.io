@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /genel
+permalink: /kategori/genel
 title: "Genel"
 ---
 
