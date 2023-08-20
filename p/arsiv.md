@@ -6,14 +6,60 @@ updated: 2022-03-21 16:32:50 UTC
 comments: false
 permalink: /arsiv
 ---
- <ul> 
-        {% for post in site.posts limit:250  %}
-        {% if forloop %}
-          <li style="    padding-bottom: 10px;
-          border-bottom: 1px dashed #ddd;
-          padding-top: 10px; width:100%; list-style-type: ; margin-left: px; font-size:13px">
-            <a class="" title="{{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
+---
+layout: page
+permalink: /2023
+title: "2023"
+---
+{% comment %}Calucate the post count for each year{% endcomment %}
+{% assign count = 1 %}
+{% assign year_cnt = "" %}
+{% for post in site.posts reversed %}
+    {% assign year = post.date | date: '%Y' %}
+    {% assign nyear = post.next.date | date: '%Y' %}
+    {% if year != nyear %}
+        {% assign count = count | append: ', ' %}
+        {% assign counts = counts | append: count %}
+		{% assign year_cnt = year_cnt | append: year | append: ', ' %}
+		{% assign years = years | append: year_cnt %}
+		{% assign year_cnt = "" %}
+        {% assign count = 1 %}
+    {% else %}
+        {% assign count = count | plus: 1 %}
+    {% endif %}
+{% endfor %}
+
+{% comment %}show navigation tag here{% endcomment %}
+<div class="archive-label-meta" style ="margin-top:25px">
+{% assign i = 0 %}
+{% comment %} remove the separator. {% endcomment %}
+{% assign counts_year = counts | split: ', ' | reverse %}
+{% assign years = years | split: ', ' %}
+{% for year in years reversed %}
+<ul class="post-categories">       
+     <a href = "#{{year}}" style = "font-family: Raleway,Arial,sans-
+      serif; font-size:14px">{{ year }} ( {{counts_year[i]}} )</a>
+</ul>
+{% assign i = i | plus: 1 %}
+{% endfor %}
+</div>
+
+{% comment %}list post link for each year{% endcomment %}
+{% assign counts = counts | split: ', ' | reverse %}
+{% assign i = 0 %}
+{% for post in site.posts %}
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        <h3 id = "{{year}}" class="archive-title">{{ post.date | date: '%Y' }}</h3>
+	  {% assign i = i | plus: 1 %}
+      {% endif %}
+	<div class="archive-meta" style="margin-left:15px;line-height:16px">
+	 <div class="post-date" style="margin-right:30px; font-size:16px; 
+          width:180px"><i class="icon-calendar"></i>{{ post.date | date:
+          "%e %B %Y" }}</div>
+     <a class="post-link" href="{{ post.url | relative_url }}">
+     <h2 class="archive-link">{{ post.title | escape }}</h2>
+     </a>
+   </div>
+{% endfor %}
