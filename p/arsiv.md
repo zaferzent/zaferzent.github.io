@@ -6,11 +6,6 @@ updated: 2022-03-21 16:32:50 UTC
 comments: false
 permalink: /arsiv
 ---
----
-layout: page
-permalink: /2023
-title: "2023"
----
 {% comment %}Calucate the post count for each year{% endcomment %}
 {% assign count = 1 %}
 {% assign year_cnt = "" %}
