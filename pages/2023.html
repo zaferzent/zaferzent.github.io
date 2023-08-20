@@ -5,7 +5,7 @@ title: "2023"
 ---
 {% for post in site.posts %}
   {% assign currentdate = post.date | date: "%Y" %}
-  {% if currentdate = 2023 %}
+  {% if currentdate = "2023" %}
     <li id="y{{currentdate}}">{{ currentdate }}</li>
     {% assign date = currentdate %} 
   {% endif %}
