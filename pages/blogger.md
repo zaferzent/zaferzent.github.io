@@ -4,6 +4,15 @@ permalink: /kategori/blogger
 title: "Blogger"
 ---
 
+
+<section class='section blogs' id='blogs'>
+
+
+
+
+  
+
+
 <div class="posts">
   {% for post in site.categories['Blogger'] %}
     <article class="post">
@@ -22,3 +31,12 @@ title: "Blogger"
     </article>
   {% endfor %}
 </div>
+
+
+
+ 
+  <div class='blog__grid2 section' id='_sidebar'>
+    {% include sidebar1.html %}
+  </div>
+
+</section>
