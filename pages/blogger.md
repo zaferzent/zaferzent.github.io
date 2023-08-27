@@ -1,13 +1,11 @@
 ---
-layout: page
+layout: 
 permalink: /kategori/blogger
 title: "Blogger"
 ---
 
 
 <section class='section blogs' id='blogs'>
-
-
 
 
   
