@@ -1,5 +1,5 @@
 ---
-layout: index1
+layout: post
 permalink: /kategori/blogger
 title: "Blogger"
 ---
