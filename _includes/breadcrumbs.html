@@ -1,4 +1,4 @@
-<div style="padding: 0.5em; margin: 0 auto; margin-bottom: 2em; box-shadow: var(--shadow); transition: transform .2s linear; border-radius: 10px; font-size: 15px;" id="breadcrumbs">
+<div style="padding: 0.5em; font-size: 15px;" id="breadcrumbs">
 {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
 <a style="color:#2978b5" href="/">Anasayfa</a>
 {% for crumb in crumbs offset: 1 %}
