@@ -1,6 +1,6 @@
 ---
 layout: index1
-permalink: /kategori/blog
+permalink: /kategori/jekyll
 title: "Blog"
 ---
 
