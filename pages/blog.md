@@ -8,9 +8,9 @@ title: "Blog"
 <section class='section blogs' id='blogs'>
   <div class='blog__grid section' id='_posts'>
     
-<div class="blog">
+
   {% for post in site.categories['Blog'] %}
-    
+    <div class="blog">
       <span class="post-date">{{ post.date | date: '%d.%m.%Y' }}</span>
       
           <h3><a href='{{ post.url | absolute_url }}' title='{{ post.title }}'> {{ post.title }} </a></h3>
@@ -21,10 +21,10 @@ title: "Blog"
    
         {{ post.excerpt }}
     
-      
+   </div>   
    
   {% endfor %}
-</div>
+
 
 
 
