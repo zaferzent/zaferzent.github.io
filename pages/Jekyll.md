@@ -1,14 +1,15 @@
 ---
 layout: index1
 permalink: /kategori/jekyll
-title: "Blog"
+title: "Jekyll"
 ---
 
 
 <section class='section blogs' id='blogs'>
   <div class='blog__grid section' id='_posts'>
     
-Jekyll
+{% include breadcrumbs.html %}
+
   {% for post in site.categories['Jekyll'] %}
     <div class="blog">
       <span class="post-date">{{ post.date | date: '%d.%m.%Y' }}</span>
