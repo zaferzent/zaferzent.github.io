@@ -8,7 +8,7 @@ title: "Blog"
 <section class='section blogs' id='blogs'>
   <div class='blog__grid section' id='_posts'>
     
-
+Blog
   {% for post in site.categories['Blog'] %}
     <div class="blog">
       <span class="post-date">{{ post.date | date: '%d.%m.%Y' }}</span>
