@@ -13,7 +13,7 @@ title: "Blog"
     <div class="blog">
       <span class="post-date">{{ post.date | date: '%d.%m.%Y' }}</span>
       
-          <h3><a href='{{ post.url | absolute_url }}' title='{{ post.title }}'> {{ post.title }} </a></h3>
+          <h3><a href="{{ post.url | absolute_url }}" title="{{ post.title }}"> {{ post.title }} </a></h3>
      
    
        
