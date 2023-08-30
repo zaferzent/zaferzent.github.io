@@ -12,7 +12,7 @@
   {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
 
-<li><a class='link' title="{{category_name}}" href="/kategori/{{ category_name | slugify }}">{{category_name}} ({{ category[1].size }})</a></li>
+<li><a class='link' title="{{category_name}}" href="/kategori/{{ category_name | slug }}">{{category_name}} ({{ category[1].size }})</a></li>
  {% endfor %}
 
 
