@@ -125,7 +125,7 @@ section#blogs{margin-top:0}
 .blog__grid{width:100%;/*display:grid;*/grid-gap:2em}
 .blog,.blog__grid2 .widget{padding:2em;margin:0 auto;margin-bottom:2em;box-shadow:var(--shadow);transition:transform .2s linear}
 .blog h1{font-size:35px;margin-bottom:20px}
-.blog h3{padding-bottom:20px}
+.blog h3{/*padding-bottom:20px*/}
 .blog__grid2 .blog h2{padding-bottom:20px!important}
 .blog:hover{transform:translateY(-7px)}
 .blog__description{margin-top:1em}
