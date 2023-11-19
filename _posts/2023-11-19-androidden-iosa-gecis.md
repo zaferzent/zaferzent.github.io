@@ -10,6 +10,7 @@ tags:
 permalink: /yeni-deneyim-androidden-iosa-gecis
 image: assets/images/android-ios.webp
 published: false
+draft: true
 title: Yeni Deneyim : Android'den iOS'a Geçiş
 ---
 ![Aile]({{site.baseurl}}/assets/images/android-ios.webp)
