@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: draft
 date: '2023-11-29 23:00 Europe/Istanbul'
 comments: true
 categories:
