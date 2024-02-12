@@ -8,7 +8,7 @@ permalink : /hakkinda
 ---
 Merhaba, bloğuma hoşgeldiniz.
 
-Ben Zafer, 30lu yaşlarında ortasında, hayallerini(var mıydı o da meçhul) maaş karşılığı bir işe satmış, evli bir çocuk babası, buralarda canı sıkıldıkça birşeyler yazarak/paylaşarak oyalanan bir faniyim.
+Ben Zafer, 30lu yaşlarında ortasında, hayallerini(var mıydı o da meçhul) maaş karşılığı bir işe satmış, evli ve bir çocuk babası, buralarda canı sıkıldıkça birşeyler yazarak/paylaşarak oyalanan bir faniyim.
 
 Bu kadar yeterli.
 
