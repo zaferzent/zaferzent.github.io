@@ -18,4 +18,6 @@ Benim anladığım kadarıyla Dijital Bahçe temel olarak kişisel fikirleri, bi
 
 Dijital bahçe, bloglardan aşina olduğumuz kişisel bir günlük tutma(yaz kalsın), güncelliğini kısa sürede yitirebilecek içerikler(haber gibi) paylaşma veya insanlara belirli konularda bir şeyler öğretme maksadıyla içerik paylaşmadan biraz daha farklı bir konu.
 
-Bloğun sadece tasarımsal olarak değiştirilip geliştirilmesi değil(aslında bloğun tasarım tarafıyla hiç alakalı değil), oluşturulan bu içeriklerin bir bahçivan edasıyla zararlı/yanlış taraflarının temizlenmesi, düzenlenmesi, geliştirilmesi, büyümesi üzerine yapılan çalışmaların bütününü kapsıyor. Paylaşılan notlar, içerikler başkalarına fayda sağlasın, mükemmel olsun düşüncesi ile paylaşılmıyor. Biraz bencilce bir durum gibi görülebilir fakat yazan kişinin kendisi için ürettiği, deneyimlediği ve geliştirdiği not, konu ve içerikleri kapsıyor. Özetle dijital bahçe aslında Blog v2 diyebiliriz.
+Bloğun sadece tasarımsal olarak değiştirilip geliştirilmesi değil(aslında bloğun tasarım tarafıyla hiç alakalı değil), oluşturulan bu içeriklerin bir bahçivan edasıyla zararlı/yanlış taraflarının temizlenmesi, düzenlenmesi, geliştirilmesi, büyümesi üzerine yapılan çalışmaların bütününü kapsıyor. Paylaşılan notlar, içerikler başkalarına fayda sağlasın, mükemmel olsun düşüncesi ile paylaşılmıyor. Biraz bencilce bir durum gibi görülebilir fakat yazan kişinin kendisi için ürettiği, deneyimlediği ve geliştirdiği not, konu ve içerikleri kapsıyor. 
+
+Özetle bana göre dijital bahçe aslında Blog v2 diyebilirim.
