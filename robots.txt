@@ -1,0 +1,6 @@
+Sitemap: https://www.zaferzent.com/sitemap.xml
+
+User-agent: *
+Disallow: /page*
+Disallow: /20*
+Allow: /*.html
