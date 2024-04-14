@@ -1,5 +1,6 @@
 ---           
-layout: post
+layout: redirected
+redirect_to:  /blogger-yazi-ve-sayfa-baglantilari-nasil-otomatik-kisaltilir
 title: Blogger Yazı ve Sayfa Bağlantıları Nasıl Otomatik Kısaltılır
 date: 2022-03-07 23:58:00 UTC
 updated: 2022-08-26 17:11:37 UTC
