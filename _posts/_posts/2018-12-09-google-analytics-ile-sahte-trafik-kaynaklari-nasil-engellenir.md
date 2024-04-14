@@ -6,7 +6,6 @@ updated: 2024-04-14 14:13 Europe/Istanbul
 comments: false
 categories: Blogger
 permalink: /google-analytics-ile-sahte-trafik-kaynaklari-nasil-engellenir
-
 ---
 ![Google Analytics ile sahte trafik kaynakları nasıl engellenir](https://3.bp.blogspot.com/-0e5ZH-3YNy0/VgNcUZfB-kI/AAAAAAAAEeY/-KBIZjpGNaE/s1600/blogger-ip-site-engelleme.jpg)
 
