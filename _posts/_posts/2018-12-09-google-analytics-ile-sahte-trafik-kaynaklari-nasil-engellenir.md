@@ -2,7 +2,7 @@
 layout: post
 title: Google Analytics ile sahte trafik kaynakları nasıl engellenir
 date: '2018-12-09 17:03:00 Europe/Istanbul'
-updated: '2024-04-14 14:13 Europe/Istanbul'
+updated: '2024-04-13 14:13 Europe/Istanbul'
 comments: false
 categories: Blogger
 permalink: /google-analytics-ile-sahte-trafik-kaynaklari-nasil-engellenir
