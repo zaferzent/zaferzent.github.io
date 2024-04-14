@@ -48,7 +48,7 @@ permalink: /arsiv
         <h3 id = "{{year}}" class="archive-title">{{ post.date | date: '%Y' }}</h3>
 	  {% assign i = i | plus: 1 %}
       {% endif %}
-	<div class="archive-meta" style="line-height:20px">
+	<div class="archive-meta" style="line-height:25px">
      {{ post.date | date:"%d.%m.%Y" }} : <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}
      </a>
    </div>
