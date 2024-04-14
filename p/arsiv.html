@@ -32,7 +32,7 @@ permalink: /arsiv
 {% assign years = years | split: ', ' %}
 {% for year in years reversed %}
   
-     <a href = "#{{year}}" style ="background: #f0f0f0f0;  padding: 5px;">{{ year }} ( {{counts_year[i]}} )</a>
+     <a href = "#{{year}}" style ="margin:3px; background: #f0f0f0f0;  padding: 3px; display: inline-block;">{{ year }} ( {{counts_year[i]}} )</a>
 
 {% assign i = i | plus: 1 %}
 {% endfor %}
@@ -48,7 +48,7 @@ permalink: /arsiv
         <h3 id = "{{year}}" class="archive-title">{{ post.date | date: '%Y' }}</h3>
 	  {% assign i = i | plus: 1 %}
       {% endif %}
-	<div class="archive-meta" style="margin-left:15px;line-height:16px">
+	<div class="archive-meta" style="margin-left:15px; line-height:16px">
 	 <div class="post-date" style="margin-right:30px; font-size:16px; 
           width:180px"><i class="icon-calendar"></i>{{ post.date | date:
           "%e %B %Y" }}</div>
