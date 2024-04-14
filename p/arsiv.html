@@ -31,10 +31,9 @@ permalink: /arsiv
 {% assign counts_year = counts | split: ', ' | reverse %}
 {% assign years = years | split: ', ' %}
 {% for year in years reversed %}
-<ul class="post-categories"><li>   
-     <a href = "#{{year}}" style = "font-family: Raleway,Arial,sans-
-      serif; font-size:14px">{{ year }} ( {{counts_year[i]}} )</a></li>
-</ul>
+  
+     <a href = "#{{year}}" style ="background: #f0f0f0f0;  padding: 5px;">{{ year }} ( {{counts_year[i]}} )</a>
+
 {% assign i = i | plus: 1 %}
 {% endfor %}
 </div>
