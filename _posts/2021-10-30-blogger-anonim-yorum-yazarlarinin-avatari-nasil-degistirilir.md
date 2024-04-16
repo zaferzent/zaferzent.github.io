@@ -1,5 +1,6 @@
 ---           
-layout: post
+layout: redirected
+redirect_to:  /blogger-anonim-yorum-yazarlarinin-avatari-nasil-degistirilir
 title: Blogger anonim yorum yazarlarının avatarı nasıl değiştirilir
 date: 2021-10-30 09:48:00 UTC
 updated: 2022-08-26 17:11:59 UTC
