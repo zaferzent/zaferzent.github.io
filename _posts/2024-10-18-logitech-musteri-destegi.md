@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2024-10-18 01:30 Europe/Istanbul'
+date: '2024-10-18 01:20 Europe/Istanbul'
 comments: true
 categories:
   - Genel
