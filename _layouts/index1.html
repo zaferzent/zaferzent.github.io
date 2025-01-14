@@ -30,14 +30,13 @@ gtag('config', '{{site.ganalytics}}');
 
 
 <button aria-label='toggle theme' class='btn btn--icon' type='button'>
-<i aria-hidden='true' class='fas fa-moon' id='btn-theme'></i>
+<span aria-hidden='true' class='fas fa-moon' id='btn-theme'>☾ | ☀</span>
+<span aria-hidden='true' class='fas fa-sun' id='btn-theme'></span>
 </button>
 <button aria-label='toggle navigation' class='btn btn--icon nav__hamburger' type='button'>
-<i aria-hidden='true' class='fas fa-bars'></i>
+<span aria-hidden='true' class='fas fa-bars'>☰</span>
 </button>
-<button aria-label='toggle theme' class='btn btn--icon' onclick='openNav()' style='margin-left: 10px; display:none' type='button'>
-<i aria-hidden='true' class='fas fa-search' id='btn-theme'></i>
-</button>
+
 </nav>
 </header><!-- #header -->
 
@@ -97,16 +96,9 @@ document.addEventListener('scroll',scrollUp)
 
 
 <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap' rel='stylesheet'/>
-<script crossorigin='anonymous' src='https://kit.fontawesome.com/fa62c117c7.js'></script>
+
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
   
-    <script>
-  if('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
-    })
-  }
-</script>
   
 </body>
 </html>
