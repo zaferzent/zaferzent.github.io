@@ -53,7 +53,7 @@ CERN'de Büyük Hadron Çarpıştırıcısı (LHC) Deneyleri: LHC, Mart ayında 
 
 NASA'nın Kepler Teleskobu: Kepler, uzak yıldızların çevresindeki ötegezegenleri bulmak için yaptığı gözlemlerde binlerce aday gezegen keşfetti.
 
-Twitter'ın Realtime Search\u2019u: Twitter, gerçek zamanlı arama özelliğini geliştirdi ve kullanıcıların anlık olaylara erişimini kolaylaştırdı.
+Twitter'ın Realtime Search'u: Twitter, gerçek zamanlı arama özelliğini geliştirdi ve kullanıcıların anlık olaylara erişimini kolaylaştırdı.
 
 Pinterest'in Başlangıcı: Mart ayında Pinterest beta sürümüyle kullanıcılarla buluştu ve hızla popülerlik kazandı.
 
@@ -63,7 +63,7 @@ Apple iPhone OS 4.0: Apple, iPhone için yeni işletim sistemi güncellemesini d
 
 Deepwater Horizon Petrol Felaketi: Meksika Körfezi'ndeki petrol platformu kazasının ardından temizleme ve önleme teknolojilerine yönelik yeni çözümler geliştirildi.
 
-Apple iAd Platformu: Apple, mobil reklamcılık platformu iAd\u2019ı duyurdu. Bu yenilik, mobil cihazlarda reklamcılığı dönüştürmeyi amaçladı.
+Apple iAd Platformu: Apple, mobil reklamcılık platformu iAd'ı duyurdu. Bu yenilik, mobil cihazlarda reklamcılığı dönüştürmeyi amaçladı.
 
 Google Street View Genişlemesi: Google, Street View özelliğini yeni ülkelere genişletti, kullanıcılara daha fazla bölgenin detaylı görüntülerini sundu.
 
@@ -73,7 +73,7 @@ SpaceX Falcon 9'un İlk Fırlatışı: SpaceX, Falcon 9 roketinin ilk başarıl�
 
 Yapay Zeka ve İnsan-Bilgisayar Etkileşimi: Yapay zekanın insan konuşmasını anlaması konusunda yeni algoritmalar geliştirildi.
 
-Facebook Open Graph API: Facebook, Open Graph API\u2019yi tanıttı ve web sitelerinin sosyal medya ile daha entegre hale gelmesini sağladı. "Beğen" düğmesi bu dönemde yaygınlaşmaya başladı.
+Facebook Open Graph API: Facebook, Open Graph API'yi tanıttı ve web sitelerinin sosyal medya ile daha entegre hale gelmesini sağladı. "Beğen" düğmesi bu dönemde yaygınlaşmaya başladı.
 
 Dropbox'ın Yükselişi: Bulut depolama servisi Dropbox, milyonlarca kullanıcıya ulaşarak bulut bilişim alanında önemli bir oyuncu haline geldi.
 
