@@ -127,3 +127,13 @@ Samsung Galaxy Nexus: Google ve Samsung işbirliğiyle Android 4.0 Ice Cream San
 Facebook 800 Milyon Kullanıcıya Ulaştı: Facebook, dünya çapında 800 milyon kullanıcıya ulaştığını açıkladı.
 
 Higgs Bozonu Çalışmaları: CERN'de Higgs bozonu parçacığının varlığına dair önemli bulgular elde edildi.
+
+**Diğer Gözlemler**
+
+Sosyal Medya ve Mobil Cihazların Yükselişi: Facebook, Twitter, LinkedIn gibi platformlar büyüdü. Akıllı telefonlar ve tabletler daha yaygın hale geldi.
+
+Bulut Bilişim: iCloud, Google Drive, Dropbox gibi hizmetler kullanıcılar arasında hızla yayıldı.
+
+Yapay Zeka ve Veri Analitiği: IBM Watson ve diğer yapay zeka projeleri büyük ilerlemeler kaydetti.
+
+Yenilenebilir Enerji ve Teknolojiler: Güneş enerjisi, elektrikli araçlar ve sürdürülebilir teknolojilere yatırımlar arttı.
