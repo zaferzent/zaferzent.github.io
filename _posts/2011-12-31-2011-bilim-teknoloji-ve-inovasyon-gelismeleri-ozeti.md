@@ -11,10 +11,10 @@ tags:
   - inovasyon
   - 2011
 permalink: /2011-bilim-teknoloji-ve-inovasyon-gelismeleri-ozeti
-image: assets/images/2011.jpeg
+image: assets/images/2011.jpg
 title: 2011 Bilim Teknoloji ve İnovasyon Gelişmeleri Özeti
 ---
-![2011]({{site.baseurl}}/assets/images/2011.jpeg)
+![2011]({{site.baseurl}}/assets/images/2011.jpg)
 
 2011 yılı boyunca bilim, teknoloji, web, internet ve inovasyon alanlarında birçok önemli gelişme yaşandı. İşte 2011 yılının ay ay önemli olaylarını farklı kaynaklardan derleyerek özet şeklinde paylaştım.
 
