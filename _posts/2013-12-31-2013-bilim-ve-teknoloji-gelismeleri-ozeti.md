@@ -15,7 +15,6 @@ image: assets/images/2013.jpg
 title: 2013 Bilim ve Teknoloji Gelişmeleri Özeti
 ---
 ![2013]({{site.baseurl}}/assets/images/2013.jpg)
-
 2013 yılı, bilim, teknoloji, web, internet ve inovasyon alanlarında önemli gelişmelerin yaşandığı bir yıl olmuştur. Aşağıda, bu yılın her ayına ait bazı önemli olayları özet başlıklar şeklinde paylaştım.
 
 **Ocak 2013**
