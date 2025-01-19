@@ -16,7 +16,6 @@ image: assets/images/2012.jpg
 title: 2012 Bilim, Teknoloji, İnternet, Web ve İnovasyon Gelişmeleri Özeti
 ---
 ![2012]({{site.baseurl}}/assets/images/2012.jpg)
-
 2012 yılı, bilim, teknoloji, web, internet ve inovasyon alanlarında önemli gelişmelerin yaşandığı bir yıl oldu. İşte o yılın her ayına dair daha kapsamlı bir özet.
 
 **Ocak 2012**
