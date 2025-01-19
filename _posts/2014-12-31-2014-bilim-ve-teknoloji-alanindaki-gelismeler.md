@@ -13,7 +13,7 @@ tags:
   - 2014
 permalink: /2014-bilim-ve-teknoloji-alanindaki-gelismeler
 image: assets/images/2014.jpg
-title: 2014 Bilim ve Teknoloji Alanındaki Gekişmeler
+title: 2014 Bilim ve Teknoloji Alanındaki Gelişmeler
 ---
 ![2014]({{site.baseurl}}/assets/images/2014.jpg)
 2014 yılında, bilim ve teknoloji alanindaki önemli gelişmeleri farklı kaynaklardan derleyerek özetledim.
