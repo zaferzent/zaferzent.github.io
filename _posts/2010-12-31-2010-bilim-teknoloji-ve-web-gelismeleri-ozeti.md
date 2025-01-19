@@ -3,6 +3,7 @@ layout: post
 date: '2010-12-31 23:30 Europe/Istanbul'
 categories:
   - Genel
+  - Teknoloji
 tags:
   - bilim
   - teknoloji
@@ -14,7 +15,6 @@ image: assets/images/2010-bilim-teknoloji-web-internet-ozet.jpeg
 title: 2010 Bilim Teknoloji ve Web Gelişmeleri Özeti
 ---
 ![2010]({{site.baseurl}}/assets/images/2010-bilim-teknoloji-web-internet-ozet.jpeg)
-
 2010 yılı boyunca bilim, teknoloji, internet ve web alanında yaşanan bazı diğer genel gelişmelerin özeti olacak şekilde yılın her ayına dair dikkat çeken olayları içerecektir. Bu yıl, web alanında sosyal medya platformlarının yükselişi, bulut teknolojilerindeki gelişmeler ve yeni web standartlarının ortaya çıkışıyla dikkat çekti.
 
 **Ocak 2010**
