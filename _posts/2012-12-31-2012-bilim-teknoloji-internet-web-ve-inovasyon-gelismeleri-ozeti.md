@@ -3,6 +3,7 @@ layout: post
 date: '2012-12-31 23:30 Europe/Istanbul'
 categories:
   - Genel
+  - Teknoloji
 tags:
   - bilim
   - teknoloji
