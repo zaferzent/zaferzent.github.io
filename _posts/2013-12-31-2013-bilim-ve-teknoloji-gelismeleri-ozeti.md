@@ -10,11 +10,11 @@ tags:
   - internet
   - web
   - 2013
-permalink: /2013-bilim-teknoloji-ve-web-gelismeleri-ozeti
-image: assets/images/2013.jpeg
+permalink: /2013-bilim-ve-teknoloji-gelismeleri-ozeti
+image: assets/images/2013.jpg
 title: 2013 Bilim ve Teknoloji Gelişmeleri Özeti
 ---
-![2013]({{site.baseurl}}/assets/images/2013.jpeg)
+![2013]({{site.baseurl}}/assets/images/2013.jpg)
 
 2013 yılı, bilim, teknoloji, web, internet ve inovasyon alanlarında önemli gelişmelerin yaşandığı bir yıl olmuştur. Aşağıda, bu yılın her ayına ait bazı önemli olayları özet başlıklar şeklinde paylaştım.
 
