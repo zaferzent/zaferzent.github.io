@@ -16,7 +16,7 @@ image: assets/images/2021.jpg
 title: 2021 Bilim ve Teknoloji Alanındaki Gelişmeler
 ---
 ![2021]({{site.baseurl}}/assets/images/2021.jpg)
-2021 yılının en büyük felaketi, COVID-19 pandemisi olarak kabul edilebilir. Dünya çapında milyonlarca insanın hayatını kaybetmesine ve sağlık sistemlerinin çökmesine neden oldu. COVID-19, ekonomik durgunluk, seyahat kısıtlamaları, işsizlik artışı ve günlük yaşamda büyük değişikliklere yol açarak küresel bir kriz haline geldi. Bu sebeple bilim ve teknoloji anlamında her ne kadar bir duraklama olsa da yine bazı önemli bilimsel ve teknoloji anlamında gelişmeler meydana geldi.
+2021 yılında bilim ve teknoloji anlamında bir çok gelişme ve inovasyon ve yenilikler meydana geldi. İşte sağdan soldan derleyip topladığım bilim ve teknoloji gelişmeleri özeti.
 
 **Bilim**
 
