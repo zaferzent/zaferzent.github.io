@@ -6,7 +6,7 @@
     
     
     <div class='widget Label' data-version='1' id='Label1'>
-    <h2>Kategoriler</h2>
+    <h3>Kategoriler</h3>
     <div class='widget-content list-label-widget-content'>
     <ul> 
   {% for category in site.categories %}
@@ -22,44 +22,76 @@
     </div>
 
 
-    <div class='widget Label' data-version='1' id=''>
-      <h2>Son Yazılar</h2>
+    
+
+
+         <div class='widget Label' id="random_posts" data-version='1' id=''>
+          <style>
+            #random_posts ul li{adding-bottom: 10px;
+          border-bottom: 1px dashed #ddd;
+          padding-top: 10px; width:100%; list-style-type: ; margin-left: px; font-size:15px}
+          </style>
+      <h3>Rastgele Yazılar</h3>
       <div class='widget-content list-label-widget-content'>
       <ul> 
-        {% for post in site.posts limit:5  %}
-        {% if forloop %}
-          <li style="    padding-bottom: 10px;
-          border-bottom: 1px dashed #ddd;
-          padding-top: 10px; width:100%; list-style-type: ; margin-left: px; font-size:15px">
-            <a class="" title="{{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </li>
-        {% endif %}
-        {% endfor %}
+      
+<script type="text/javascript">
+
+    var postsHREF = [{% for post in site.posts %}"{{ post.url }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+
+    var postsTitle = [{% for post in site.posts %}"{{ post.title }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+
+</script>
+<script type="text/javascript">
+
+    var randomIndexUsed = [];
+    var counter = 0;
+    var numberOfPosts = 5;
+
+    while (counter < numberOfPosts)
+    {
+        var randomIndex;
+        var postHREF;
+        var postTitle;
+
+        randomIndex = Math.floor(Math.random() * postsHREF.length);
+
+        if (randomIndexUsed.indexOf(randomIndex) == "-1")
+        {
+            postHREF = postsHREF[randomIndex];
+            postTitle = postsTitle[randomIndex];
+
+            if (counter == (numberOfPosts - 1))
+            {
+                document.write('<li><a href="' + postHREF + '">' + postTitle + '</a></li>');
+            }
+            else
+            {
+                document.write('<li><a href="' + postHREF + '">' + postTitle + '</a></li><hr />');
+            }
+
+            randomIndexUsed.push(randomIndex);
+
+            counter++;
+        }
+    }
+
+</script>
+
+      
       </ul>
       <div class='clear'></div>
       </div>
       </div>
+
     
-    <div class='widget HTML' data-version='1' id='HTML2'>
-    <h2 class='title'>Seçilmiş Yazılar</h2>
-    <div class='widget-content'>
-      {% for post in site.categories.Blogger limit:5 %}
-      {% if post.url %}
-      <li style="    padding-bottom: 10px;
-      border-bottom: 1px dashed #ddd;
-      padding-top: 10px; width:100%; list-style-type: none; margin-left: px; font-size:15px"><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-      
-    </div>
-    <div class='clear'></div>
-    </div>
+   
     
   
 
 
       <div class='widget HTML' data-version='1' id='HTML2'>
-        <h2 class='title'>Araçlar</h2>
+        <h3 class='title'>Araçlar</h3>
         <div class='widget-content'>
           {% for item in site.data.menus.sidebarmenu %}
           <li  style="    padding-bottom: 10px;
@@ -73,7 +105,7 @@
         </div>
 
   <div class='widget HTML' data-version='1' id='HTML2'>
-        <h2 class='title'>Bağlantılar</h2>
+        <h3 class='title'>Bağlantılar</h3>
         <div class='widget-content'>
           {% for item in site.data.menus.sidebarmenu2 %}
           <li  style="    padding-bottom: 10px;
