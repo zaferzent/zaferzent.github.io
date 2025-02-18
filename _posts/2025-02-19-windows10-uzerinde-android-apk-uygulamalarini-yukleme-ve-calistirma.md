@@ -14,9 +14,7 @@ title: Windows 10 Üzerinde Android(APK) Uygulamalarını Yükleme ve Çalışt�
 ![windows 10 üzerinde android apk uygulamalarını yükleme ve çalıştırma](/assets/images/windows10-uzerinde-android-uygulamalari-calistirma.jpg)
 Yakın zamana kadar yaşadığım sorunlar nedeniyle  Windows 11'den **Windows 10**'a geri dönüş yapmıştım. Windows 11 üzerinde birkaç aktif kullandığım **Android** uygulaması vardı. Windows 10 üzerinde de bu uygulamaları kullanmaya devam edeyim derken, daha önceleri sanal olarak Hackintosh'a kadar kurup kullanmış birisi olarak bu işlemin Windows 10'da neden bu kadar uğraştırıcı olduğunu anlam veremedim. Android uygulamalarını kullanmak için halihazırda Emulator programları var fakat ben pek tercih etmediğimden o yöntemi kullanmak istemedim.
 
-Windows 11'de **Microsoft Store** üzerinden **WSATools** kurularak aslında bu işlem kısa sürede yapılabiliyordu, belki başka bir işlem de vardır fakat ben yaptığımı hatırlamıyorun. Windows 10'da mağazada WSATools için minimum sistem 
-gereksinimleri karşılamıyor diye uyarı veriyor ve uygulama kurulumuna izin vermiyor. Ben de biraz araştırma yaparak bunun çözümünü toplayıp, derleyip özet olarak paylaşmak istedim. Çok ayrıntıya girmiyorum, pek anladığınız konular değilse
-program kurulumları için Youtube üzerinden yardım alabilirsiniz.
+Windows 11'de **Microsoft Store** üzerinden **WSATools** kurularak aslında bu işlem kısa sürede yapılabiliyordu, belki başka bir işlem de vardır fakat ben yaptığımı hatırlamıyorun. Windows 10'da mağazada WSATools için minimum sistem gereksinimleri karşılamıyor diye uyarı veriyor ve uygulama kurulumuna izin vermiyor. Ben de biraz araştırma yaparak bunun çözümünü toplayıp, derleyip özet olarak paylaşmak istedim. Çok ayrıntıya girmiyorum, pek anladığınız konular değilse program kurulumları için Youtube üzerinden yardım alabilirsiniz.
 
 Neyse gelelim konumuza. Şimdi Windows 10 üzerinde Android uygulamalarını kurup kullanabilmek için iki program yüklemek gerekiyor.
 
