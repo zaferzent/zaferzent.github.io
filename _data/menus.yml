@@ -36,6 +36,9 @@ footermenu:
 # Sidebar Menu
 sidebarmenu:
 
+- title: Çekiliş Yapma Aracı
+  url: "cekilis-yapma-araci"
+
 - title: Blogger Kod Dönüştürücü
   url: "blogger-kod-donusturucu"
   
