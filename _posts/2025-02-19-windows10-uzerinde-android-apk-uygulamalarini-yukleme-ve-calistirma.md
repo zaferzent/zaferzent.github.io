@@ -4,7 +4,7 @@ date: '2025-02-19 00:47 Europe/Istanbul'
 categories:
   - Teknoloji
 tags:
-  - windows 10
+  - windows
   - android
   - google
 permalink: /windows10-uzerinde-android-apk-uygulamalarini-yukleme-ve-calistirma
