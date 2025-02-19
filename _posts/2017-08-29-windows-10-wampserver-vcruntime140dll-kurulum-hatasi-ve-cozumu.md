@@ -29,25 +29,24 @@ Bütün sürümlere ait indirme bağlantılarını Microsoft'un indirme sayfalar
 **Microsoft Visual C++ indirme bağlantıları**
 
 Microsoft Visual C++ 2008 Redistributable Package x86
-(https://www.microsoft.com/en-us/download/details.aspx?id=29){:class="link"}
+[microsoft.com/en-us/download/details.aspx?id=29](https://www.microsoft.com/en-us/download/details.aspx?id=29){:class="link"}
 
 Microsoft Visual C++ 2008 Redistributable Package x64 
-(https://www.microsoft.com/en-us/download/details.aspx?id=15336){:class="link"}
+[microsoft.com/en-us/download/details.aspx?id=15336](https://www.microsoft.com/en-us/download/details.aspx?id=15336){:class="link"}
 
 Microsoft Visual C++ 2010 Redistributable Package (x86) 
-(https://www.microsoft.com/en-us/download/details.aspx?id=5555){:class="link"}
+[microsoft.com/en-us/download/details.aspx?id=5555](https://www.microsoft.com/en-us/download/details.aspx?id=5555){:class="link"}
 
 Microsoft Visual C++ 2010 Redistributable Package (x64)
-(https://www.microsoft.com/en-us/download/details.aspx?id=14632){:class="link"}
+[microsoft.com/en-us/download/details.aspx?id=14632](https://www.microsoft.com/en-us/download/details.aspx?id=14632){:class="link"}
 
 Visual C++ Redistributable for Visual Studio 2012 Update 4 x86-x64
-(https://www.microsoft.com/en-us/download/details.aspx?id=30679){:class="link"}
+[microsoft.com/en-us/download/details.aspx?id=30679](https://www.microsoft.com/en-us/download/details.aspx?id=30679){:class="link"}
 
 Visual C++ Redistributable Packages for Visual Studio 2013 x86-x64
-(https://www.microsoft.com/en-us/download/details.aspx?id=40784){:class="link"}
+[microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784){:class="link"}
 
 Visual C++ Redistributable Packages for Visual Studio 2015 x86-x64
-(https://www.microsoft.com/tr-TR/download/details.aspx?id=48145){:class="link"}
+[microsoft.com/tr-TR/download/details.aspx?id=48145](https://www.microsoft.com/tr-TR/download/details.aspx?id=48145){:class="link"}
 
-
-* 2012, 2013 ve 2015 bağlantılarında hem x86 hem de x64 bulunmakta olup iki farklı sürümlerini de indirmek gerekiyor.<br /><br />
+Uyarı : 2012, 2013 ve 2015 bağlantılarında hem x86 hem de x64 bulunmakta olup iki farklı sürümlerini de indirmek gerekiyor.
