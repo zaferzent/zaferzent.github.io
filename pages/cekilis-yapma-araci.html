@@ -10,7 +10,7 @@ permalink : /cekilis-yapma-araci
 <p>İsimleri alt alta yazın ve çekilişi başlatın.</p>
     <textarea id="nameList" placeholder="İsimleri buraya girin..."></textarea>
     <br/>
-    <button onclick="runRaffle()">Çekilişi Yap</button>
+    <button class="yap" onclick="runRaffle()">Çekilişi Yap</button>
     <div id="loading" style="display: none;">Sonuçlar yükleniyor...</div>
     <div id="winners"></div>
     <div id="backups"></div>
@@ -96,7 +96,7 @@ Hemen deneyin ve çekilişinizi şimdi yapın!
             height: 300px;
             margin: 10px;
         }
-        button {
+        .yap {
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
