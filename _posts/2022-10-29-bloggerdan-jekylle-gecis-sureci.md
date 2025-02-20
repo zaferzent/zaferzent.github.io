@@ -61,6 +61,38 @@ Yazının ilk yayınlanma tarihini değil de güncellenme tarihini çekiyordu bu
 Migrate.rb dosyasını github adresimden indirebilirsiniz : [migrate.rb](https://github.com/zaferzent/migrate.rb){:class="link"}
 <br />
 
+Güncelleme : Blogger yazılarını Jekyll'e uygun olarak markdown yazı formatına dönüştürmek için üst kısımda bazı eksik bilgiler vermiştim. Aslında kaynak siteyi paylaşmıştım fakat anlamayanlar için. Yazıyı güncelleyerek bu işlemleri baştan paylaşmak istedim.
+
+Öncelikle bilgisayarımızda Ruby yüklememiz gerekiyor.. [https://rubyinstaller.org/downloads/](https://rubyinstaller.org/downloads/)adresinden **Ruby+Devkit 3.4.2-1 (x64)** veya **Ruby+Devkit 3.4.2-1 (x86)** sürümlerinden bilgisayarınıza uygun olanı yükleyin.
+
+Daha sonra Windows > Başlat alaında **Start Command Prompt with Ruby** aratarak başlatmamız gerekiyor.
+
+Açılan Ruby komut satırında ek bileşenlerin yüklenmesi için Y/N olarak seçim istiyor Y Enter basarak devam ediyoruz. Bu yükleme işlemi tammalandıktan sonra diğer işlemlere geçiyoruz. 
+
+Bu adımdan sonra ister Ruby Komut İstemcisini isterseniz Windows'un kendi Komut İstemcisini kullanarak devam edebilirsiniz. 
+
+Ruby migrate.rb betiğini çalıştırabilmemiz için sırasıyla gem paketlerini yüklememiz gerekiyor. 
+
+Öncelikle Komut İstemcisinde gem install feedjira yazarak bu paketi yüklüyoruz.
+
+Daha sonra yine Komut İstemcisinde gem install httparty komutunu da yazarak paket yükleme işlemlerini tamamlıyoruz.
+
+Artık blogger/blogspot yazılarını markdown formatına çevirmek için son işlemimiz kalıyor.
+
+O da yine Komut İstemcisinde : Komut İstemcisini migrate.rb nin bulunduğunu dizinde açtığını varsayarsak veya migrate.rb dosyasını masaüstüne alıp cd Desktop ile Masaüstüne geçerek şu komutu çalıştırıyoruz 
+
+ruby migrate.rb https://www.blogadresi.com/feeds/posts/default
+
+Bu komutu yazdıktan sonra
+
+Fetching feed https://www.hesapmotoru.com/feeds/posts/default/
+Parsing feed...
+Writing posts to
+Done!
+
+bu şekilde bir çıktı aldığımız takdirde tüm blog yazılarının Masaüstünde posts/ klasrü içerisinde yer aldığını görürüz.
+
+
 3 - Blogger Yorumlarını Disqus'a, Disqus'tan Jekyll'e Aktarma
 ------
 Jekyll'de kullanılabilecek bir yorum sistemi olan Disqus hali hazırda Blogger için de kullanılabiliyor. Ben daha önceleri kurup test etme fırsatı bulmuştum. Fakat blogger yorum sistemini kullanmaya devam ettim. Jekyll'e geçiş yaptıktan sonra doğal olarak Disqus'u kullanmaya başladım. Burada önemli nokta Disqus destekli bir Jekyll temasını kullanmak. Blogger yorumlarını **[Disqus Import](https://disqus.com/admin/discussions/import/platform/blogger/)** sayfasından blogger yorumlarını disqus'a aktardım. Daha sonrasında Jekyll'e çektim. 
