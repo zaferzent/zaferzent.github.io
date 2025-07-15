@@ -9,7 +9,7 @@ layout: home
 
 
 {% assign turkce_yazilar = site.posts | where_exp: "post", "post.lang != 'en' or post.lang == nil" %}
-{% for post in turkce_yazilar limit:6 %}
+{% for post in turkce_yazilar limit:6 offset:6 %}
   {% include postbox2.html %}
 {% endfor %}
 
