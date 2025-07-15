@@ -38,7 +38,7 @@
 
     var postsHREF = [{% for post in site.posts %}{% if post.lang == "en" %}"{{ post.url }}"{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}];
 
-    var postsTitle = [{% for post in site.posts %}"{{ post.title }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+    var postsTitle = [{% for post in site.posts %}{% if post.lang == "en" %}"{{ post.title }}"{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}];
 
 </script>
 <script type="text/javascript">
