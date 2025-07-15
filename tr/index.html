@@ -7,7 +7,7 @@ layout: home
   <div class='blog__grid section' id='_posts'>
 
 
-{% for post in site.posts limit:6%}
+{% for post in site.posts limit:6 %}
        {% if post.lang != "en" %}
       {% unless post.featured == false %}
         {% include postbox2.html %}
@@ -24,12 +24,12 @@ layout: home
       
 	  
 	  
-	 <!-- Pagination -->
+	 <!-- Pagination 
     <div style="" class="bottompagination">
       <span class="navigation" role="navigation">
           {% include pagination.html %}
       </span>
-  </div> 
+  </div> -->
 	  
 </div> 
     
