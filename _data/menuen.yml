@@ -1,0 +1,40 @@
+# Top Menu
+topmenu:
+
+- title: Home
+  url: ""
+
+- title: About
+  url: "/en/about"
+  
+
+
+
+# Footer Menu
+footermenu:
+
+- title: Home
+  url: ""
+  
+- title: Feed
+  url: "feed.xml"
+  
+- title: Sitemap
+  url: "sitemap.xml"
+
+
+# Sidebar Menu
+sidebarmenu:
+
+- title: Test
+  url: "/"
+
+
+  
+  
+# Sidebar Menu 2
+sidebarmenu2:
+
+- title: Hesap Motoru
+  url: "https://www.hesapmotoru.com"
+
