@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="manifest" href="manifest.json">
+<meta charset="utf-8">
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+{% seo %}
+<link href="{{ site.baseurl }}/assets/css/style1.css" rel="stylesheet">
+{% if jekyll.environment == "production" %}       
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.ganalytics}}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '{{site.ganalytics}}');
+</script>
+{% endif %}
+
+</head>
+<body class='light' id='top'>
+
+<header class='header center'>
+<a class='link' href='/' title="Weblog" style='font-size: 2rem; color:#2978b5; font-weight:500'>Weblog</a>
+<nav class='nav center'>
+<ul class='nav__list center'>
+  {% for item in site.data.menuen.topmenu %}
+<li class='nav__list-item'><a class='link link--nav' title='{{item.title}}' href='{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}' rel='nofollow' alt='{{item.title}}'>{{item.title}}</a></li>
+{% endfor %}
+</ul>
+
+
+<button aria-label='toggle theme' class='btn btn--icon' type='button'>
+<span aria-hidden='true' class='fas fa-moon' id='btn-theme'>☾ | ☀</span>
+<span aria-hidden='true' class='fas fa-sun' id='btn-theme'></span>
+</button>
+<button aria-label='toggle navigation' class='btn btn--icon nav__hamburger' type='button'>
+<span aria-hidden='true' class='fas fa-bars'>☰</span>
+</button>
+
+</nav>
+</header><!-- #header -->
+
+<main>
+  {{ content }}  
+</main>
+
+<footer class='footer'>
+<ul>
+  {% for item in site.data.menus.footermenu %}
+  <li style="list-style: none;">
+    <a class="link" href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" title="{{item.title}}" alt="{{item.title}}">{{item.title}}</a>
+  </li>
+  {% endfor %}
+  </ul>
+<br/><br/>
+Copyright © {{site.title}}. All rights reserved.
+</footer>
+<div class='scroll-container'>
+<div class='scroll-top'>
+<a aria-label='Scroll up' href='#top'>
+<i aria-hidden='true' class='fas fa-arrow-up'></i>
+</a>
+</div>
+</div>
+  
+
+<script>
+const body=document.body
+const btnTheme=document.querySelector('.fa-moon')
+const btnHamburger=document.querySelector('.fa-bars')
+const addThemeClass=(bodyClass,btnClass)=>{body.classList.add(bodyClass)
+btnTheme.classList.add(btnClass)}
+const getBodyTheme=localStorage.getItem('portfolio-theme')
+const getBtnTheme=localStorage.getItem('portfolio-btn-theme')
+addThemeClass(getBodyTheme,getBtnTheme)
+const isDark=()=>body.classList.contains('dark')
+const setTheme=(bodyClass,btnClass)=>{body.classList.remove(localStorage.getItem('portfolio-theme'))
+btnTheme.classList.remove(localStorage.getItem('portfolio-btn-theme'))
+addThemeClass(bodyClass,btnClass)
+localStorage.setItem('portfolio-theme',bodyClass)
+localStorage.setItem('portfolio-btn-theme',btnClass)}
+const toggleTheme=()=>isDark()?setTheme('light','fa-moon'):setTheme('dark','fa-sun')
+btnTheme.addEventListener('click',toggleTheme)
+const displayList=()=>{const navUl=document.querySelector('.nav__list')
+if(btnHamburger.classList.contains('fa-bars')){btnHamburger.classList.remove('fa-bars')
+btnHamburger.classList.add('fa-times')
+navUl.classList.add('display-nav-list')}else{btnHamburger.classList.remove('fa-times')
+btnHamburger.classList.add('fa-bars')
+navUl.classList.remove('display-nav-list')}}
+btnHamburger.addEventListener('click',displayList)
+const scrollUp=()=>{const btnScrollTop=document.querySelector('.scroll-top')
+if(body.scrollTop>500||document.documentElement.scrollTop>500){btnScrollTop.style.display='block'}else{btnScrollTop.style.display='none'}}
+document.addEventListener('scroll',scrollUp)
+</script>
+  
+
+
+<link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap' rel='stylesheet'/>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+  
+  
+</body>
+</html>
