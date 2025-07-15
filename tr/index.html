@@ -7,24 +7,20 @@ layout: home
   <div class='blog__grid section' id='_posts'>
 
 
+ {% if post.lang != "en" limit:6 offset:6 %}
+      {% unless post.featured == false %}
+        {% include postbox2.html %}
+      {% endunless %}
+      {% endif %}
+      {% endfor %}
 
-{% assign turkce_yazilar = site.posts | where_exp: "post", "post.lang != 'en' or post.lang == nil" %}
-{% for post in turkce_yazilar limit:6 offset:6 %}
-  {% include postbox2.html %}
-{% endfor %}
 
 
 <div class="see-all">
   <a href="/arsiv" class="button">Tüm Yazılar</a>
 </div>
 
-      <!-- eski post alanı{% for post in site.posts %}
-       {% if post.lang != "en" %}
-      {% unless post.featured == false %}
-        {% include postbox2.html %}
-      {% endunless %}
-      {% endif %}
-      {% endfor %}-->
+  
 	  
 	  
 	 <!-- Pagination -->
