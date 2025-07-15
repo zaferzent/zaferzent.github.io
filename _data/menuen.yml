@@ -5,10 +5,10 @@ topmenu:
   url: ""
 
 - title: About
-  url: "/en/about"
+  url: "en/about"
   
 - title: Archive
-  url: "/en/archive"
+  url: "en/archive"
 
 
 # Footer Menu
