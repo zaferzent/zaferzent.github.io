@@ -1,0 +1,121 @@
+<style>.widget ul li:last-child{border-bottom:none !important}</style>
+  
+   
+    
+    
+    
+    
+    <div class='widget Label' data-version='1' id='Label1'>
+    <h3>Categories</h3>
+    <div class='widget-content list-label-widget-content'>
+    <ul> 
+  
+
+<li><a class='link' title="" href="">Test Category</a></li>
+
+
+
+    </ul>
+    <div class='clear'></div>
+    </div>
+    </div>
+
+
+    
+
+
+         <div class='widget Label' id="random_posts" data-version='1' id=''>
+          <style>
+            #random_posts ul li{adding-bottom: 10px;
+          border-bottom: 1px dashed #ddd;
+          padding-top: 10px; width:100%; list-style-type: ; margin-left: px; font-size:15px}
+          </style>
+      <h3>Random Posts</h3>
+      <div class='widget-content list-label-widget-content'>
+      <ul> 
+      
+<script type="text/javascript">
+
+    var postsHREF = [{% for post in site.posts %}{% if post.lang == "en" %}"{{ post.url }}"{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}];
+
+    var postsTitle = [{% for post in site.posts %}"{{ post.title }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+
+</script>
+<script type="text/javascript">
+
+    var randomIndexUsed = [];
+    var counter = 0;
+    var numberOfPosts = 5;
+
+    while (counter < numberOfPosts)
+    {
+        var randomIndex;
+        var postHREF;
+        var postTitle;
+
+        randomIndex = Math.floor(Math.random() * postsHREF.length);
+
+        if (randomIndexUsed.indexOf(randomIndex) == "-1")
+        {
+            postHREF = postsHREF[randomIndex];
+            postTitle = postsTitle[randomIndex];
+
+            if (counter == (numberOfPosts - 1))
+            {
+                document.write('<li><a href="' + postHREF + '">' + postTitle + '</a></li>');
+            }
+            else
+            {
+                document.write('<li><a href="' + postHREF + '">' + postTitle + '</a></li><hr />');
+            }
+
+            randomIndexUsed.push(randomIndex);
+
+            counter++;
+        }
+    }
+
+</script>
+
+      
+      </ul>
+      <div class='clear'></div>
+      </div>
+      </div>
+
+    
+   
+    
+  
+
+
+      <div class='widget HTML' data-version='1' id='HTML2'>
+        <h3 class='title'>Tools</h3>
+        <div class='widget-content'>
+          {% for item in site.data.menuen.sidebarmenu %}
+          <li  style="    padding-bottom: 10px;
+          
+          padding-top: 10px; width:100%; list-style-type: none ; margin-left: px; font-size:15px">
+            <a class="link" href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" title="{{item.title}}">{{item.title}}</a>
+          </li>
+          {% endfor %}
+        </div>
+        <div class='clear'></div>
+        </div>
+
+  <div class='widget HTML' data-version='1' id='HTML2'>
+        <h3 class='title'>Links</h3>
+        <div class='widget-content'>
+          {% for item in site.data.menuen.sidebarmenu2 %}
+          <li  style="    padding-bottom: 10px;
+          
+          padding-top: 10px; width:100%; list-style-type: none ; margin-left: px; font-size:15px">
+            <a target="_blank" class="link" href="{{item.url}}" title="{{item.title}}">{{item.title}}</a>
+          </li>
+          {% endfor %}
+        </div>
+        <div class='clear'></div>
+        </div>
+
+
+
