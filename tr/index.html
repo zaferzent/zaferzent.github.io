@@ -7,7 +7,8 @@ layout: home
   <div class='blog__grid section' id='_posts'>
 
 
- {% if post.lang != 'en' limit:6 offset:6 %}
+{% for post in site.posts limit:6%}
+       {% if post.lang != "en" %}
       {% unless post.featured == false %}
         {% include postbox2.html %}
       {% endunless %}
@@ -16,14 +17,19 @@ layout: home
 
 
 
-<div class='see-all'>
-  <a href='/arsiv' class='button'>Tüm Yazılar</a>
+<div class="see-all">
+  <a href="/arsiv" class="button">Tüm Yazılar</a>
 </div>
 
-  
+      
 	  
 	  
-	
+	 <!-- Pagination -->
+    <div style="" class="bottompagination">
+      <span class="navigation" role="navigation">
+          {% include pagination.html %}
+      </span>
+  </div> 
 	  
 </div> 
     
