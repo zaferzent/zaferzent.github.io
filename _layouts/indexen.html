@@ -47,7 +47,7 @@ gtag('config', '{{site.ganalytics}}');
 
 <footer class='footer'>
 <ul>
-  {% for item in site.data.menus.footermenu %}
+  {% for item in site.data.menuen.footermenu %}
   <li style="list-style: none;">
     <a class="link" href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" title="{{item.title}}" alt="{{item.title}}">{{item.title}}</a>
   </li>
