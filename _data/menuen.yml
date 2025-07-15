@@ -8,8 +8,7 @@ topmenu:
   url: "en/about"
   
 - title: Archive
-  url: "en/archive"
-
+  url: ""
 
 # Footer Menu
 footermenu:
