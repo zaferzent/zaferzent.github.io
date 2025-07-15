@@ -6,9 +6,11 @@ layout: home
 <section class='section blogs' id='blogs'>
   <div class='blog__grid section' id='_posts'>
       {% for post in paginator.posts %}
+       {% if post.lang == "en" %}
       {% unless post.featured == false %}
         {% include postbox2.html %}
       {% endunless %}
+      {% endif %}
       {% endfor %}
 	  
 	  
