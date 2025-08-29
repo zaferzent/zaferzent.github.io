@@ -69,5 +69,5 @@ Aşağıdaki resimde benim örnek kurulumum görebilirsiniz.
 
 ![adb ile apk kurulum](/assets/images/adb-ile-apk-kurulum.png)
 
-Son olarak başlatta yüklemiş olduğunuz Android uygulamasını aratıp çalıştırarak sonucu görüyoruz.
+Son olarak Başlat Menüsünde yüklemiş olduğunuz Android uygulamasını aratıp çalıştırarak sonucu görüyoruz.
 
