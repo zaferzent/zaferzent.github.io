@@ -3,7 +3,7 @@ description: "Oval Menü Blog - Jekyll Uygulaması"
 baseurl: ""
 url: "http://localhost:4000"
 markdown: kramdown
-
+theme: null
 permalink: ":year/:month/:slug.html"
 
 # Koleksiyonlar
