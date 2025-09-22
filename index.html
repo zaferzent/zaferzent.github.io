@@ -5,72 +5,95 @@ title: "Anasayfa"
 
 {% assign all_items = site.posts | concat: site.notes | concat: site.photos | concat: site.bookmarks | sort: "date" | reverse %}
 
-<main>
-{% for item in all_items %}
+<main id="content-list">
+  {% for item in all_items %}
+    <article class="post hidden">
+      {% if item.collection == "posts" %}
+        <span class="meta">✍️ Post</span>
+        <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+        <p>{{ item.excerpt }}</p>
+        <span class="meta">📅 {{ item.date | date: "%d %B %Y" }}</span>
 
-  {% if item.collection == "posts" %}
-    <article class="post">
-      <span class="meta">✍️ Post</span>
-      <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
-      <p>{{ item.excerpt }}</p>
-      
-      <span class="meta">📅 {{ item.date | date: "%d %B %Y" }}</span>
+      {% elsif item.collection == "notes" %}
+        <span class="meta">🗒️ Note</span>
+        <p>{{ item.content }}</p>
+        <span class="meta">📅 <a title="{{ item.title }}" href="{{ item.url }}">{{ item.date | date: "%d %B %Y" }}</a></span>
+
+      {% elsif item.collection == "photos" %}
+        <span class="meta">📷 Photo</span>  
+        <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+        <img src="{{ item.image }}">
+        <p>{{ item.content }}</p>
+        <span class="meta">📅 {{ item.date | date: "%d %B %Y" }}</span>
+        {% if item.location %}
+          <span class="meta">📍 {{ item.location }}</span>
+        {% endif %}
+
+      {% elsif item.collection == "bookmarks" %}
+        <span class="meta">🔗 Bookmark</span>  
+        <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+        <p>{{ item.content }}</p>
+        <span class="meta"><a href="{{ item.link }}" target="_blank">🔗 {{ item.title }}</a></span>
+      {% endif %}
     </article>
+  {% endfor %}
+</main>
 
-  {% elsif item.collection == "notes" %}
-    <article class="post">
-       <span class="meta">🗒️ Note</span>
-    <p>{{ item.content }}</p>
-   <span class="meta">📅 <a title="{{ item.title }}" href="{{ item.url }}">{{ item.date | date: "%d %B %Y" }}</a></span>
-    </article>
-
-  {% elsif item.collection == "photos" %}
-    <article class="post">
-      <span class="meta">📷 Photo</span>  
-      <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
-    <img src="{{ item.image }}">
-    <p>{{ item.content }}</p>
-        <span class="meta">📅 {{ item.date | date: "%d %B %Y" }} {% if item.location %}</span><span class="meta">📍 {{ item.location }}{% endif %}</span>
-
-</article>
-
-  {% elsif item.collection == "bookmarks" %}
-    <article class="post">
-      <span class="meta">🔗 Bookmark</span>  
-      <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
-       
-       <p>{{ item.content }}</p>
-     <span class="meta"><a href="{{ item.link }}" target="_blank">🔗 {{ item.title }}</a></span>
-  </article>
-
-  {% endif %}
-
-{% endfor %}
+<button id="loadMore">⬇️ Daha Fazla Göster</button>
 
 <section class="photo-posts">
   <h3>📷 Photos</h3>
   <div class="photo-grid">
     {% for photo in site.photos limit:6 %}
-    
       <div class="photo-item">
         <a href="{{ photo.url | relative_url }}">
           <img src="{{ photo.image }}" alt="{{ photo.title }}">
-   
           <h3>{{ photo.title }}</h3>
-        {% if photo.location %}
-          <p>📍 {{ photo.location }}</p>
-        {% endif %}
+          {% if photo.location %}
+            <p>📍 {{ photo.location }}</p>
+          {% endif %}
         </a>
       </div>
     {% endfor %}
   </div>
 </section>
-</main>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  let posts = document.querySelectorAll("#content-list .post");
+  let loadMoreBtn = document.getElementById("loadMore");
+  let visible = 5; // ilk başta 5 tane göster
 
+  // İlk 5 içeriği göster
+  posts.forEach((post, i) => {
+    if (i < visible) post.classList.remove("hidden");
+  });
 
+  loadMoreBtn.addEventListener("click", function() {
+    let hiddenPosts = document.querySelectorAll("#content-list .post.hidden");
+    for (let i = 0; i < 5 && i < hiddenPosts.length; i++) {
+      hiddenPosts[i].classList.remove("hidden");
+    }
+    if (document.querySelectorAll("#content-list .post.hidden").length === 0) {
+      loadMoreBtn.style.display = "none"; // hepsi açıldıysa butonu gizle
+    }
+  });
+});
+</script>
 
- 
-
-
-
+<style>
+.post.hidden { display: none; }
+#loadMore {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+}
+#loadMore:hover {
+  background: #444;
+}
+</style>
