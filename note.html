@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+{% include head.html %}
+ </head>
+<body style="background-color: #d1eda3;">
+
+
+{% include menu.html %}
+
+<div class="container">
+
+    <div class="page-container">
+
+    <div class="content-column">
+
+{{content}}
+<span>{{ page.date | date: "%-d %B %Y %H:%M" }}</span>
+
+{% include footer.html %}
+        </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

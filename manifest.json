@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "Web Günlüğü",
+  "name": "Weblog",
   "short_name": "WBlog",
   "background_color": "#fff",
   "theme_color": "#000",
   "start_url": "/",
   "display": "standalone",
-  "description": "blogger ipuçları eklentileri ve temalarının yer aldığı web günlüğü",
+  "description": "blog",
   "icons": [{
     "src": "bag.svg",
     "sizes":"any",
