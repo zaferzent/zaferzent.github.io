@@ -98,6 +98,7 @@ section a:hover{text-decoration: none; border:none}
   color:var(--accent);
 }
 .meta{
+  display:inline-block;
   font-size:14px;
   color:gray;
   margin-bottom:8px;
