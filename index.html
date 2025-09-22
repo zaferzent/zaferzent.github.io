@@ -10,33 +10,37 @@ title: "Anasayfa"
 
   {% if item.collection == "posts" %}
     <article class="post">
+      <span class="meta">✍️ Post</span>
       <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
       <p>{{ item.excerpt }}</p>
-      <span class="meta">✍️ Blog</span>
+      
       <span class="meta">📅 {{ item.date | date: "%d %B %Y" }}</span>
     </article>
 
   {% elsif item.collection == "notes" %}
     <article class="post">
+       <span class="meta">🗒️ Note</span>
     <p>{{ item.content }}</p>
-    <span class="meta">🗒️ Note</span><span class="meta">📅 <a title="{{ item.title }}" href="{{ item.url }}">{{ item.date | date: "%d %B %Y" }}</a></span>
+   <span class="meta">📅 <a title="{{ item.title }}" href="{{ item.url }}">{{ item.date | date: "%d %B %Y" }}</a></span>
     </article>
 
   {% elsif item.collection == "photos" %}
     <article class="post">
+      <span class="meta">📷 Photo</span>  
       <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
     <img src="{{ item.image }}">
     <p>{{ item.content }}</p>
-    <span class="meta">📷 Photo</span>      <span class="meta">📅 {{ item.date | date: "%d %B %Y" }} {% if item.location %}</span><span class="meta">📍 {{ item.location }}{% endif %}</span>
+        <span class="meta">📅 {{ item.date | date: "%d %B %Y" }} {% if item.location %}</span><span class="meta">📍 {{ item.location }}{% endif %}</span>
 
 </article>
 
   {% elsif item.collection == "bookmarks" %}
     <article class="post">
+      <span class="meta">🔗 Bookmark</span>  
       <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
        
        <p>{{ item.content }}</p>
-      <span class="meta">📅 {{ item.date | date: "%d %B %Y" }}</span><span class="meta"><a href="{{ item.link }}" target="_blank">🔗 {{ item.title }}</a></span>
+     <span class="meta"><a href="{{ item.link }}" target="_blank">🔗 {{ item.title }}</a></span>
   </article>
 
   {% endif %}
