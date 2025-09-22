@@ -14,15 +14,9 @@ permalink: /notes/
 {% for note in notes %}
   <article class="post">
     <p>{{ note.content }}</p>
-    <span class="meta">🗒️ Note</span>
+ 
     <span class="meta">📅 <a href="{{ note.url | relative_url }}">{{ note.date | date: "%d %B %Y" }}</a></span>
-    {% if note.tags %}
-    <span class="meta">
-      {% for tag in note.tags %}
-        🏷️ {{ tag }}{% unless forloop.last %}, {% endunless %}
-      {% endfor %}
-    </span>
-    {% endif %}
+
   </article>
 {% endfor %}
 </main>
