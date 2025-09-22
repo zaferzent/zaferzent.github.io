@@ -13,19 +13,13 @@ title: "Anasayfa"
       <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
       <p>{{ item.excerpt }}</p>
       <span class="meta">✍️ Blog</span>
-      <span class="meta">📅 {{ item.date | date: "%d %B %Y" }}</span><span class="meta">📁 
-  {% for cat in item.categories %}
-     {{ cat }}{% unless forloop.last %}, {% endunless %}
-  {% endfor %}
-</span>
+      <span class="meta">📅 {{ item.date | date: "%d %B %Y" }}</span>
     </article>
 
   {% elsif item.collection == "notes" %}
     <article class="post">
     <p>{{ item.content }}</p>
-    <span class="meta">🗒️ Note</span><span class="meta">📅 <a title="{{ item.title }}" href="{{ item.url }}">{{ item.date | date: "%d %B %Y" }}</a></span><span class="meta"> {% for tag in item.tags %}
-    🏷️ {{ tag }} {% if forloop.last == false %}, {% endif %}
-    {% endfor %}</span>
+    <span class="meta">🗒️ Note</span><span class="meta">📅 <a title="{{ item.title }}" href="{{ item.url }}">{{ item.date | date: "%d %B %Y" }}</a></span>
     </article>
 
   {% elsif item.collection == "photos" %}
