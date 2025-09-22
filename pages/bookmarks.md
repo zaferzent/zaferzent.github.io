@@ -15,7 +15,7 @@ permalink: /bookmarks/
   <article class="post">
     <h2><a href="{{ bookmark.url | relative_url }}">{{ bookmark.title }}</a></h2>
     <p>{{ bookmark.content }}</p>
-    <span class="meta">📅 {{ bookmark.date | date: "%d %B %Y" }}</span>
+   
     {% if bookmark.link %}
       <span class="meta"><a href="{{ bookmark.link }}" target="_blank">🔗 {{ bookmark.title }}</a></span>
     {% endif %}
