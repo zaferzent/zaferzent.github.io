@@ -1,0 +1,29 @@
+title: "WeBlog"
+description: "Oval Menü Blog - Jekyll Uygulaması"
+baseurl: ""
+url: "http://localhost:4000"
+markdown: kramdown
+
+permalink: ":year/:month/:slug.html"
+
+# Koleksiyonlar
+collections:
+  notes:
+    output: true
+    permalink: /notes/:year:month:day:hour:minute/
+  photos:
+    output: true
+    permalink: /photos/:title/
+  bookmarks:
+    output: true
+    permalink: /bookmarks/:title/
+
+include:
+  - _pages
+
+# Plugins
+plugins: 
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-archives
