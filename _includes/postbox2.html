@@ -1,7 +1,0 @@
-{% assign author = site.authors[post.author] %}
- <div class='blog'>
-    
-	<span class="post-date">{{ post.date | date: '%d.%m.%Y' }}</span>
-	<h2><a href='{{ post.url | absolute_url }}' title='{{ post.title }}'> {{ post.title }} </a></h2>
-    {{ post.excerpt}}
- </div>

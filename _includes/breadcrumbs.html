@@ -1,9 +1,0 @@
-<div style="padding: 0.5em; font-size: 15px;" id="breadcrumbs">
-{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-<a style="color:#2978b5" href="/">Anasayfa</a>
-{% for crumb in crumbs offset: 1 %}
-  {% if forloop.last %}
-    › {{ page.title }}
- {% endif %}
-{% endfor %}
-</div>
