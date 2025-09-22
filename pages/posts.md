@@ -81,12 +81,8 @@ document.addEventListener("DOMContentLoaded", function() {
       <article class="post" style="display:none;">
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         <p>{{ post.excerpt | default: post.content | strip_html | truncatewords: 40 }}</p>
-        <span class="meta">✍️ Blog</span>
-        <span class="meta">📅 {{ post.date | date: "%d %B %Y" }}</span><span class="meta">📁 
-  {% for cat in post.categories %}
-     {{ cat }}{% unless forloop.last %}, {% endunless %}
-  {% endfor %}
-</span>
+        
+        <span class="meta">📅 {{ post.date | date: "%d %B %Y" }}</span>
       </article>
     {% endfor %}
   </div>
