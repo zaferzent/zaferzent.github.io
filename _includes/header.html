@@ -1,0 +1,23 @@
+<header id="header" class="site-header">
+  <div class="top-row">
+    <div class="brand">
+      <div class="logo">Z</div>
+      <span>{{ site.title }}</span>
+    </div>
+    
+    <button class="hamburger" id="menuBtn" aria-label="Menü">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <rect y="5" width="20" height="2" rx="1"/>
+        <rect y="11" width="20" height="2" rx="1"/>
+        <rect y="17" width="20" height="2" rx="1"/>
+      </svg>
+    </button>
+  </div>
+  <nav class="menu-list">
+    <a href="{{ '/' | relative_url }}">🏠 Home</a>
+    <a href="/posts">✍️ Posts</a>
+    <a href="/photos">📷 Photos</a>
+    <a href="/notes">🗒️ Notes</a>
+    <a href="/bookmarks">🔖 Bookmarks</a>
+  </nav>
+</header>

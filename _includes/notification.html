@@ -1,0 +1,89 @@
+{% assign all_content = site.blog | concat: site.notes | concat: site.photos %}
+{% assign sorted_content = all_content | sort: 'date' | reverse %}
+{% assign latest = sorted_content[0] %}
+
+<div id="site-notification" class="notification hidden">
+  <div class="notification-icon">📢</div>
+  <div class="notification-text">
+    <strong>New Content:</strong><br/>
+    <a href="{{ latest.url }}">{{ latest.title }}</a>
+  </div>
+  <button class="notification-close" onclick="dismissNotification()">×</button>
+</div>
+
+
+<style>
+  .notification {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: #202124;
+    color: #f1f1f1;
+    padding: 1rem 1.25rem;
+    border-left: 5px solid #4caf50;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    z-index: 9999;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 340px;
+    font-size: 0.95rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  .notification.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .notification-icon {
+    font-size: 1.5rem;
+  }
+
+  .notification a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .notification a:hover {
+    text-decoration: underline;
+  }
+
+  .notification-close {
+    background: transparent;
+    border: none;
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    .notification {
+      right: 1rem;
+      bottom: 1rem;
+      max-width: 90%;
+    }
+  }
+</style>
+
+<script>
+  function dismissNotification() {
+    document.getElementById('site-notification').classList.remove('show');
+    localStorage.setItem('notificationDismissed', 'true');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const dismissed = localStorage.getItem('notificationDismissed');
+    if (!dismissed) {
+      setTimeout(() => {
+        document.getElementById('site-notification').classList.add('show');
+      }, 2500); // Bildirim 2.5 saniye sonra görünür
+    }
+  });
+</script>
+
