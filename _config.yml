@@ -1,7 +1,7 @@
-title: "WeBlog"
-description: "Oval Menü Blog - Jekyll Uygulaması"
+title: "Weblog"
+description: "another jekyll blog"
 baseurl: ""
-url: "http://localhost:4000"
+url: "https://www.zaferzent.com"
 markdown: kramdown
 theme: null
 permalink: ":year/:month/:slug.html"
