@@ -26,5 +26,27 @@
     }
   </script>
    {% include notification.html %}
+
+
+  <button id="installBtn" style="display:none;">📲 Install App</button>
+
+<script>
+let deferredPrompt;
+const installBtn = document.getElementById('installBtn');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  installBtn.style.display = 'block';
+});
+
+installBtn.addEventListener('click', () => {
+  installBtn.style.display = 'none';
+  deferredPrompt.prompt();
+  deferredPrompt.userChoice.then((choiceResult) => {
+    deferredPrompt = null;
+  });
+});
+</script>
 </body>
 </html>
