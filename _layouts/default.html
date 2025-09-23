@@ -27,44 +27,5 @@
   </script>
    {% include notification.html %}
 
-
-  <div id="pwaInstallBar" style="
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #2563eb;
-  color: #fff;
-  padding: 12px;
-  text-align: center;
-  display: none;
-  z-index: 9999;">
-  📲 This site supports pwa. Would you like to install it?
-  <button id="installBtn" style="margin-left:10px;padding:6px 12px;border:none;border-radius:6px;background:#fff;color:#2563eb;cursor:pointer;">
-    Install
-  </button>
-  <button id="closeBar" style="margin-left:10px;padding:6px 12px;border:none;border-radius:6px;background:#f87171;color:#fff;cursor:pointer;">
-    Close
-  </button>
-</div>
-
-<script>
-let deferredPrompt;
-const installBtn = document.getElementById('installBtn');
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  installBtn.style.display = 'block';
-});
-
-installBtn.addEventListener('click', () => {
-  installBtn.style.display = 'none';
-  deferredPrompt.prompt();
-  deferredPrompt.userChoice.then((choiceResult) => {
-    deferredPrompt = null;
-  });
-});
-</script>
 </body>
 </html>
