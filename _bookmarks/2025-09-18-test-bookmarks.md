@@ -4,5 +4,6 @@ title: "Başka Bir Bookmark"
 date: 2025-09-17
 type: bookmark
 link: https://ornek.com
+published: false
 ---
 Başka bir bookmark veya link veya url
