@@ -197,6 +197,9 @@ section a:hover{text-decoration: none; border:none}
   width:100%;
   border-radius:12px;
   margin-bottom:10px;
+  height: 220px; /* sabit yükseklik */
+  object-fit: cover; /* görüntüyü kırparak ortalar */
+  display: block;
 }
 
 .photo-item h3{
