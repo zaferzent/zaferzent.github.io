@@ -1,0 +1,126 @@
+---           
+layout: page
+title: Çekiliş Yapma Aracı
+date: '2025-02-19 00:47 Europe/Istanbul'
+updated: '2025-02-19 00:47 Europe/Istanbul'
+comments: false
+permalink : /cekilis-yapma-araci
+---
+<div class="cekilis">
+<p>İsimleri alt alta yazın ve çekilişi başlatın.</p>
+    <textarea id="nameList" placeholder="İsimleri buraya girin..."></textarea>
+    <br/>
+    <button class="yap" onclick="runRaffle()">Çekilişi Yap</button>
+    <div id="loading" style="display: none;">Sonuçlar yükleniyor...</div>
+    <div id="winners"></div>
+    <div id="backups"></div>
+
+    <script>
+        function runRaffle() {
+            let names = document.getElementById("nameList").value.split("\n").map(name => name.trim()).filter(name => name);
+            
+            if (names.length < 10) {
+                document.getElementById("winners").innerText = "En az 10 isim girmelisiniz!";
+                document.getElementById("backups").innerText = "";
+                return;
+            }
+            
+            document.getElementById("winners").innerText = "";
+            document.getElementById("backups").innerText = "";
+            document.getElementById("loading").style.display = "block";
+            
+            setTimeout(() => {
+                document.getElementById("loading").style.display = "none";
+                let shuffled = names.sort(() => Math.random() - 0.5);
+                let winners = shuffled.slice(0, 5).map((name, index) => `${index + 1}. ${name}`).join("\n");
+                let backups = shuffled.slice(5, 10).map((name, index) => `${index + 1}. ${name}`).join("\n");
+                
+                document.getElementById("winners").innerText = "Asıl Kazananlar:\n" + winners;
+                document.getElementById("backups").innerText = "Yedek Kazananlar:\n" + backups;
+            }, 5000);
+        }
+    </script>
+</div>
+<br/><br/>
+Çekiliş Aracı: Rastgele Kazananları Belirleyin!
+ <br/>
+Çekiliş Aracı Nedir?
+ <br/>
+Çekiliş aracı, belirlediğiniz isim listesinden rastgele kazananları seçmek için kullanılan bir uygulamadır. Bu araç, özellikle kampanyalar, yarışmalar, hediyeler ve etkinliklerde adil bir şekilde kazananları belirlemek için kullanılır.
+ <br/>
+Çekiliş Aracı Nasıl Çalışır?
+ <br/>
+Bu araç, kullanıcı tarafından girilen isim listesinden rastgele seçim yaparak kazananları belirler. İşleyişi şu şekildedir:
+ <br/>
+Kullanıcı, metin kutusuna isim listesini girer. Her isim yeni bir satırda olmalıdır.
+ <br/>
+"Çekilişi Yap" butonuna basıldığında sistem rastgele seçim yapar.
+ <br/>
+Kazananlar belirlenmeden önce "Sonuçlar yükleniyor..." mesajı ekrana gelir ve 5 saniye boyunca görünür.
+ <br/>
+Ardından, 5 asıl kazanan ve 5 yedek kazanan listesi ekrana yazdırılır.
+ <br/>
+Asıl ve yedek kazananlar birbirinden farklı olacak şekilde seçilir, böylece her çekiliş adil ve eşit şartlarda gerçekleşir.
+ <br/>
+Çekiliş Aracının Kullanım Alanları
+ <br/>
+Bu araç birçok farklı alanda kullanılabilir:
+ <br/>
+Sosyal medya çekilişleri: Instagram, Twitter veya Facebook kampanyaları için kazananları belirlemek.
+ <br/>
+Etkinlik ve toplantılar: Konferanslar, seminerler veya etkinliklerde ödül sahiplerini seçmek.
+ <br/>
+Hediye çekilişleri: Şirket içi ya da kişisel hediye çekilişleri düzenlemek.
+ <br/>
+Ödüllü yarışmalar: Katılımcılar arasından rastgele kazanan seçmek.
+ <br/>
+Eğlenceli oyunlar: Arkadaş grupları veya sınıflar için eğlenceli çekilişler düzenlemek.
+ <br/>
+Çekiliş Aracı Neden Tercih Edilmelidir?
+ <br/>
+Tamamen rastgele seçim yapar, adil bir çekiliş sağlar.
+ <br/>
+Kullanımı kolaydır, herhangi bir teknik bilgi gerektirmez.
+ <br/>
+Sonuçları hızlıca ekrana getirir, kazananları net bir şekilde gösterir.
+ <br/>
+Yedek kazanan seçeneği sayesinde ödül verilememe durumlarında kolayca yeni kazanan belirlenebilir.
+ <br/>
+Bu çekiliş aracı, şeffaf ve adil bir sistemle kazananları belirlemek için harika bir çözümdür. Kullanımı basittir ve sonuçları hızlı bir şekilde alabilirsiniz. İster sosyal medya çekilişleri, ister etkinlikler için olsun, bu araçla kazananları kolayca belirleyebilirsiniz!
+ <br/>
+Hemen deneyin ve çekilişinizi şimdi yapın!
+
+   <style>
+        textarea {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }
+        .yap {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #000;
+    		color: #fff;
+    		margin-bottom:30px;
+        }
+        #winners, #backups {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            white-space: pre-line;
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 10px;
+            background:#eee;
+        }
+        #loading {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+        }
+        .cekilis{
+        	text-align:center;
+        }
+    </style>
