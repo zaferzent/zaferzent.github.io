@@ -12,14 +12,14 @@ title: "Home"
         <span class="meta">✍️ Post</span>
         <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
         <p>{{ item.excerpt }}</p>
-        <span class="meta">📅 <time class="timeago" datetime="{{ page.date | date_to_xmlschema }}">
+        <span class="meta">📅 <time class="timeago" datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%S%:z" }}">
   {{ page.date | date: "%B %d, %Y" }}
 </time></span>
 
       {% elsif item.collection == "notes" %}
         <span class="meta">🗒️ Note</span>
         <p>{{ item.content }}</p>
-        <span class="meta">📅 <a title="{{ item.title }}" href="{{ item.url }}"><time class="timeago" datetime="{{ page.date | date_to_xmlschema }}">
+        <span class="meta">📅 <a title="{{ item.title }}" href="{{ item.url }}"><time class="timeago" datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%S%:z" }}">
   {{ page.date | date: "%B %d, %Y" }}
 </time></a></span>
 
@@ -28,7 +28,7 @@ title: "Home"
         <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
         <img src="{{ item.image }}">
         <p>{{ item.content }}</p>
-        <span class="meta">📅 <time class="timeago" datetime="{{ page.date | date_to_xmlschema }}">
+        <span class="meta">📅 <time class="timeago" datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%S%:z" }}">
   {{ page.date | date: "%B %d, %Y" }}
 </time></span>
         {% if item.location %}
