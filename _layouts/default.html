@@ -8,11 +8,7 @@
    {% seo %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
-<script>
-  // English varsayılan zaten "timeago.js" içinde var
-  timeago.render(document.querySelectorAll('.timeago'), 'en');
-</script>
+
 </head>
 <body>
 
@@ -32,5 +28,11 @@
   </script>
    {% include notification.html %}
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
+<script>
+  // English varsayılan zaten "timeago.js" içinde var
+  timeago.render(document.querySelectorAll('.timeago'), 'en');
+</script>
 </body>
 </html>
