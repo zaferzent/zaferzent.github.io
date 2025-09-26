@@ -5,6 +5,7 @@ url: "https://www.zaferzent.com"
 markdown: kramdown
 theme: null
 permalink: ":year/:month/:slug.html"
+timezone: "Europe/Istanbul"
 
 # Koleksiyonlar
 collections:
