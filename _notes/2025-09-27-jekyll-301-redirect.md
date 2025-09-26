@@ -1,4 +1,4 @@
---
+---
 layout: note
 title: "Jekyll 301 redirect"
 date: 2025-09-27 00:25:00 +0300
