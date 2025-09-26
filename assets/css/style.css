@@ -91,7 +91,7 @@ section a:hover{text-decoration: none; border:none}
   margin-bottom:18px;
   /* border:1px solid rgba(0,0,0,.05);*/
 }
-
+.post code{background: #f0f0f0;  padding: 3px;  font-size: 15px; border: 1px solid #eee;  border-radius: 5px;}
 .post h2{
   margin:6px 0 10px 0;
   font-size:25px;
