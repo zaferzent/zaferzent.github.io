@@ -17,7 +17,7 @@ title: "Home"
 </time></span>
 
       {% elsif item.collection == "notes" %}
-        <span class="meta">🗒️ Note</span>
+        <span class="meta">🗒️ Note and Thoughts</span>
         <p>{{ item.content }}</p>
         <span class="meta">📅 <a title="{{ item.title }}" href="{{ item.url }}"><time class="timeago" datetime="{{ item.date | date: "%Y-%m-%dT%H:%M:%S%:z" }}">
   {{ item.date | date: "%B %d, %Y" }}
