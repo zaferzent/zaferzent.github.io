@@ -1,8 +1,8 @@
 ---
 title: "Hello world"
 date: "2024-04-13 Europe/Istanbul"
-lang: en
-permalink: /en/hello-world
+layout: redirected
+redirect_to: /hello-world
 ---
 
 Hello, I am Zafer 
