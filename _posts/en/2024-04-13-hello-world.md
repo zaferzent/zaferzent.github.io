@@ -3,6 +3,7 @@ title: "Hello world"
 date: "2024-04-13 Europe/Istanbul"
 layout: redirected
 redirect_to: /hello-world
+permalink: "en/hello-world"
 ---
 
 Hello, I am Zafer 
