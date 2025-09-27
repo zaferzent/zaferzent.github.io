@@ -1,5 +1,6 @@
 ---           
-layout: page
+layout: redirected
+redirect_to : /about
 title: About
 permalink : /en/about
 ---
