@@ -7,7 +7,7 @@ layout: none
     <title>{{ site.title | xml_escape }}</title>
     <link>{{ site.url }}{{ site.baseurl }}</link>
     <description>{{ site.description | xml_escape }}</description>
-    <language>tr</language>
+    <language>en</language>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 
     {% assign all_content = site.blog | concat: site.notes | concat: site.photos | concat: site.bookmarks | sort: 'date' | reverse %}
@@ -24,4 +24,5 @@ layout: none
     {% endfor %}
   </channel>
 </rss>
+
 
