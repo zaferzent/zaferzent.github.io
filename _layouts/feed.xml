@@ -18,12 +18,19 @@ layout: none
         <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
         <guid>{{ site.url }}{{ item.url }}</guid>
         <description><![CDATA[
-          {{ item.content | markdownify}}
+          {% if item.image %}
+            <p><img src="{{ item.image }}" alt="{{ item.title | escape }}" style="max-width:100%; height:auto;"></p>
+          {% endif %}
+          {% if item.location %}
+            <p><strong>📍 {{ item.location }}</strong></p>
+          {% endif %}
+          {% if item.content %}
+            {{ item.content | markdownify }}
+          {% else %}
+            <p>{{ item.title }}</p>
+          {% endif %}
         ]]></description>
       </item>
     {% endfor %}
   </channel>
 </rss>
-
-
-
