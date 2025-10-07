@@ -18,11 +18,12 @@ layout: none
         <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
         <guid>{{ site.url }}{{ item.url }}</guid>
         <description><![CDATA[
-          {{ item.content | markdownify | strip_html}}
+          {{ item.content | markdownify}}
         ]]></description>
       </item>
     {% endfor %}
   </channel>
 </rss>
+
 
 
