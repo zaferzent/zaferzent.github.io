@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<main>
+  <article class="post">
+  
+      <h1>📍 {{ page.title }}</h1>
+      <p>{{ content }}</p>
+     <span class="meta">📅 {{ page.date | date: "%d %B %Y" }}</span><span class="meta" style="">✉️ <a href="mailto:zfrznt@gmail.com?subject=Reply%20to :%20{{ page.title }}">Reply by mail</a></span>
+
+  </article>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+var map = L.map('map').setView([{{ page.latitude }}, {{ page.longitude }}], 14);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+attribution: '&copy; OpenStreetMap'
+}).addTo(map);
+
+L.marker([{{ page.latitude }}, {{ page.longitude }}]).addTo(map);
+</script>
+</main>
