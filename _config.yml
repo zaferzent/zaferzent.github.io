@@ -21,6 +21,7 @@ collections:
   checkins:
     output: true
     permalink: /checkins/:title/
+    
 include:
   - _pages
 
