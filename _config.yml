@@ -18,7 +18,9 @@ collections:
   bookmarks:
     output: true
     permalink: /bookmarks/:title/
-
+  checkins:
+    output: true
+    permalink: /checkins/:title/
 include:
   - _pages
 
