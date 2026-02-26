@@ -24,12 +24,12 @@ title: "Home"
 </time></a></span>
 
        {% elsif item.collection == "checkins" %}
-        <span class="meta">📍 Checkins</span>
-        <p>📍 {{ item.title }}</p>
+        <span class="meta">📍 {{ item.title }}</span>
+     
 
-       <a title="{{ item.title }}" href="{{ item.url }}"><time class="timeago" datetime="{{ item.date | date: "%Y-%m-%dT%H:%M:%S%:z" }}">
+      <span class="meta"> <a title="{{ item.title }}" href="{{ item.url }}"><time class="timeago" datetime="{{ item.date | date: "%Y-%m-%dT%H:%M:%S%:z" }}">
   {{ item.date | date: "%B %d, %Y" }}
-</time></a>
+</time></a></span>
 
       {% elsif item.collection == "photos" %}
         <span class="meta">📷 Photo</span>  
