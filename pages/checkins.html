@@ -12,16 +12,16 @@ border-radius:10px;">📍 Checkins</h1>
 <main>
   <div id="checkin-container">
     {% assign all_checkins = site.checkins | sort: "date" | reverse %}
-    {% for checkin in all_checkins %}
+    {% for checkins in all_checkins %}
       <article class="checkin" style="display:none;">
         <h2>
           <a href="{{ checkin.url | relative_url }}">
-            📍 {{ checkin.title }}
+            📍 {{ checkins.title }}
           </a>
         </h2>
 
         <p>
-          {{ checkin.excerpt | default: checkin.content | strip_html | truncatewords: 30 }}
+          {{ checkin.excerpt | default: checkins.content | strip_html | truncatewords: 30 }}
         </p>
 
         <span class="meta">
@@ -31,14 +31,5 @@ border-radius:10px;">📍 Checkins</h1>
     {% endfor %}
   </div>
 
-  <div style="text-align:center; margin:20px;">
-    <button style="background:#fff;
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:10px;
-    cursor:pointer;" 
-    id="loadMoreCheckinsBtn">
-      More Checkins
-    </button>
-  </div>
+
 </main>
