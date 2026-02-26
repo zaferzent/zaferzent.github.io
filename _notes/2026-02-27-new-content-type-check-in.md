@@ -10,4 +10,4 @@ That’s why I decided to bring different content types together here.
 Today, the latest content type I added is Check-ins.
 With this, I’ll now be sharing the locations of the places I visit.
 
-![Check-in](/assets/images/Screenshot_20260227_021642_Chrome.jpg)
+!(/assets/images/Screenshot_20260227_021642_Chrome.jpg)
