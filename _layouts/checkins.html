@@ -9,16 +9,29 @@ layout: default
      <span class="meta">📅 {{ page.date | date: "%d %B %Y" }}</span><span class="meta" style="">✉️ <a href="mailto:zfrznt@gmail.com?subject=Reply%20to :%20{{ page.title }}">Reply by mail</a></span>
 
   </article>
+
+
+<div id="map" style="height:350px; margin:20px 0; border-radius:12px;"></div>
+
+
+<!-- LEAFLET CSS & JS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script>
-var map = L.map('map').setView([{{ page.latitude }}, {{ page.longitude }}], 14);
+// Güvenli değişken ataması
+var lat = {{ page.latitude | default: 0 }};
+var lng = {{ page.longitude | default: 0 }};
 
+// Haritayı oluştur
+var map = L.map('map').setView([lat, lng], 14);
+
+// OpenStreetMap katmanı ekle
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap'
 }).addTo(map);
 
-L.marker([{{ page.latitude }}, {{ page.longitude }}]).addTo(map);
+// Marker ekle
+L.marker([lat, lng]).addTo(map);
 </script>
 </main>
