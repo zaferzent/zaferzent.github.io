@@ -4,32 +4,23 @@ title: Checkins
 permalink: /checkins/
 ---
 
-<h1 style="background:#f0f0f0f0;
-padding:10px;
-margin:20px;
-border-radius:10px;">📍 Checkins</h1>
+<h1 style="background: #f0f0f0f0;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;">📍 Checkins</h1>
 
 <main>
-  <div id="checkin-container">
-    {% assign all_checkins = site.checkins | sort: "date" | reverse %}
-    {% for checkins in all_checkins %}
-      <article class="checkin" style="display:none;">
-        <h2>
-          <a href="{{ checkin.url | relative_url }}">
-            📍 {{ checkins.title }}
+{% assign checkins = site.checkins | sort: "date" | reverse %}
+{% for checkin in checkins %}
+  <article class="post">
+    <a href="{{ checkin.url | relative_url }}">
+            📍 {{ checkin.title }}
           </a>
-        </h2>
+    <p>{{ checkin.content }}</p>
+ 
+    <span class="meta">📅 <a href="{{ checkin.url | relative_url }}">{{ checkin.date | date: "%d %B %Y" }}</a></span>
 
-        <p>
-          {{ checkin.excerpt | default: checkins.content | strip_html | truncatewords: 30 }}
-        </p>
-
-        <span class="meta">
-          📅 {{ checkin.date | date: "%d %B %Y" }}
-        </span>
-      </article>
-    {% endfor %}
-  </div>
-
-
+  </article>
+{% endfor %}
 </main>
+
