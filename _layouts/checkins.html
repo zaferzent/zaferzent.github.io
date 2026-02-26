@@ -5,10 +5,7 @@ layout: default
   <article class="post">
   
       <h1>📍 {{ page.title }}</h1>
-      <p>{{ content }}</p>
-     <span class="meta">📅 {{ page.date | date: "%d %B %Y" }}</span><span class="meta" style="">✉️ <a href="mailto:zfrznt@gmail.com?subject=Reply%20to :%20{{ page.title }}">Reply by mail</a></span>
-
-  </article>
+      
 
 
 <div id="map" style="height:350px; margin:20px 0; border-radius:12px;"></div>
@@ -34,4 +31,56 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Marker ekle
 L.marker([lat, lng]).addTo(map);
 </script>
+
+    
+     <span class="meta">📅 {{ page.date | date: "%d %B %Y" }}</span><span class="meta" style="">✉️ <a href="mailto:zfrznt@gmail.com?subject=Reply%20to :%20{{ page.title }}">Reply by mail</a></span>
+
+
+
+
+<!-- Harita Div -->
+<div id="map" style="height:350px;margin:20px 0;border-radius:12px;"></div>
+
+<!-- Checkin içeriği -->
+{{ content }}
+
+<!-- Leaflet CSS & JS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+// Page title'dan geocoding
+var title = "{{ page.title }}";
+
+// Nominatim API ile konum al
+fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(title)}`)
+.then(response => response.json())
+.then(data => {
+  if(data.length > 0){
+    var lat = parseFloat(data[0].lat);
+    var lon = parseFloat(data[0].lon);
+
+    // Leaflet harita oluştur
+    var map = L.map('map').setView([lat, lon], 14);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map);
+
+    // Marker ekle
+    L.marker([lat, lon]).addTo(map);
+  } else {
+    document.getElementById('map').innerHTML = "Konum bulunamadı";
+  }
+})
+.catch(err => {
+  console.error("Geocoding hatası:", err);
+  document.getElementById('map').innerHTML = "Harita yüklenemedi";
+});
+</script>
+
+    
+  </article>
+
+
 </main>
