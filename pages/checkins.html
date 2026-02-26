@@ -7,16 +7,16 @@ permalink: /checkins/
 <h1 style="background: #f0f0f0f0;
     padding: 10px;
     margin: 20px;
-    border-radius: 10px;">📍 Checkins</h1>
+    border-radius: 10px;">Checkins</h1>
 
 <main>
 {% assign checkins = site.checkins | sort: "date" | reverse %}
 {% for checkin in checkins %}
   <article class="post">
-    <a href="{{ checkin.url | relative_url }}">
+    <p><a href="{{ checkin.url | relative_url }}">
             📍 {{ checkin.title }}
           </a>
-    <p>{{ checkin.content }}</p>
+    </p>
  
     <span class="meta">📅 <a href="{{ checkin.url | relative_url }}">{{ checkin.date | date: "%d %B %Y" }}</a></span>
 
