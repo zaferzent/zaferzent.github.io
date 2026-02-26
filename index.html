@@ -24,8 +24,9 @@ title: "Home"
 </time></a></span>
 
        {% elsif item.collection == "checkins" %}
-        <span class="meta">📍 {{ item.title }}</span>
-     
+        <span class="meta">📍 Checkins </span>
+      
+     {{ item.title }}
 
       <span class="meta"> <a title="{{ item.title }}" href="{{ item.url }}"><time class="timeago" datetime="{{ item.date | date: "%Y-%m-%dT%H:%M:%S%:z" }}">
   {{ item.date | date: "%B %d, %Y" }}
