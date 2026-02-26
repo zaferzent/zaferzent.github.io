@@ -13,10 +13,7 @@ permalink: /checkins/
 {% assign checkins = site.checkins | sort: "date" | reverse %}
 {% for checkin in checkins %}
   <article class="post">
-    <p><a href="{{ checkin.url | relative_url }}">
-            📍 {{ checkin.title }}
-          </a>
-    </p>
+    <p> 📍 {{ checkin.title }}            </p>
  
     <span class="meta">📅 <a href="{{ checkin.url | relative_url }}">{{ checkin.date | date: "%d %B %Y" }}</a></span>
 
