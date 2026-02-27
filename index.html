@@ -40,20 +40,28 @@ title: "Home"
 </span>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
-  var lat = {{ item.latitude | default: 0 }};
-  var lng = {{ item.longitude | default: 0 }};
+  var mapDiv = document.getElementById("map-{{ forloop.index }}");
 
-  if(lat && lng){
-    var map = L.map('map-{{ forloop.index }}')
-      .setView([lat, lng], 13);
+  var lat = parseFloat(mapDiv.dataset.lat);
+  var lng = parseFloat(mapDiv.dataset.lng);
+
+  if (!isNaN(lat) && !isNaN(lng)) {
+
+    var map = L.map(mapDiv.id).setView([lat, lng], 13);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap'
     }).addTo(map);
 
     L.marker([lat, lng]).addTo(map);
+
+    // 👇 KRİTİK SATIR
+    setTimeout(function () {
+      map.invalidateSize();
+    }, 300);
+
   }
 
 });
