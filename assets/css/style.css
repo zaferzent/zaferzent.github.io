@@ -72,11 +72,11 @@ main a:hover{border-bottom: 1px solid dodgerblue;}
 .site-header.expanded .menu-list{display:flex;}
 @media(min-width:900px){
   .site-header{flex-direction:row;align-items:center;justify-content:space-between;padding:10px 20px;         max-width: 80%;
-        margin: 20px auto;}
+        margin: 20px auto; z-index: 9999;}
   .hamburger{display:none;}
   .menu-list{display:flex !important;flex-direction:row;margin-top:0;gap:20px;}
 }
-
+@media(max-width:900px){.site-header{z-index: 9999;}}
 /* CONTENT */
 main{
   max-width:890px;
