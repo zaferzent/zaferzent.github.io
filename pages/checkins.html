@@ -14,6 +14,30 @@ permalink: /checkins/
 {% for checkin in checkins %}
   <article class="post">
     <p> 📍 {{ checkin.title }}            </p>
+
+<div id="map" style="height:350px; margin:20px 0; border-radius:12px;"></div>
+
+
+<!-- LEAFLET CSS & JS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+// Güvenli değişken ataması
+var lat = {{ checkin.latitude | default: 0 }};
+var lng = {{ checkin.longitude | default: 0 }};
+
+// Haritayı oluştur
+var map = L.map('map').setView([lat, lng], 14);
+
+// OpenStreetMap katmanı ekle
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap'
+}).addTo(map);
+
+// Marker ekle
+L.marker([lat, lng]).addTo(map);
+</script>
  
     <span class="meta">📅 <a href="{{ checkin.url | relative_url }}">{{ checkin.date | date: "%d %B %Y" }}</a></span>
 
