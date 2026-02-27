@@ -29,52 +29,11 @@ title: "Home"
 
 <p>📍 {{ item.title }}</p>
 
-{% elsif item.collection == "checkins" %}
-
-<span class="meta">📍 Checkins</span>
-
-<p>📍 {{ item.title }}</p>
-
-<div 
-  class="map"
-  id="map-{{ forloop.index }}"
-  data-lat="{{ item.latitude }}"
-  data-lng="{{ item.longitude }}"
-  style="height:250px; margin:15px 0; border-radius:12px;">
-</div>
-
-<span class="meta">
-  📅 <a href="{{ item.url | relative_url }}">
-  {{ item.date | date: "%d %B %Y" }}
-  </a>
-</span>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  var mapDiv = document.getElementById("map-{{ forloop.index }}");
-
-  var lat = parseFloat(mapDiv.dataset.lat);
-  var lng = parseFloat(mapDiv.dataset.lng);
-
-  if (!isNaN(lat) && !isNaN(lng)) {
-
-    var map = L.map(mapDiv.id).setView([lat, lng], 13);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap'
-    }).addTo(map);
-
-    L.marker([lat, lng]).addTo(map);
-
-    setTimeout(function(){
-      map.invalidateSize();
-    }, 200);
-
-  }
-
-});
-</script>
+<img
+  src="https://staticmap.openstreetmap.de/staticmap.php?center={{ item.latitude }},{{ item.longitude }}&zoom=12&size=800x400"
+  alt="📍 {{ item.title }}"
+  style="width:100%; border-radius:12px;"
+/>
 
 
       {% elsif item.collection == "photos" %}
