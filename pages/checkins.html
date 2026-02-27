@@ -26,20 +26,23 @@ permalink: /checkins/
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script>
-// Güvenli değişken ataması
-var lat = {{ checkin.latitude | default: 0 }};
-var lng = {{ checkin.longitude | default: 0 }};
+{% for checkin in checkins %}
 
-// Haritayı oluştur
-var map = L.map('map').setView([lat, lng], 14);
+  var lat = {{ checkin.latitude | default: 0 }};
+  var lng = {{ checkin.longitude | default: 0 }};
 
-// OpenStreetMap katmanı ekle
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap'
-}).addTo(map);
+  if(lat && lng){
+    var map{{ forloop.index }} = L.map('map-{{ forloop.index }}')
+      .setView([lat, lng], 14);
 
-// Marker ekle
-L.marker([lat, lng]).addTo(map);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map{{ forloop.index }});
+
+    L.marker([lat, lng]).addTo(map{{ forloop.index }});
+  }
+
+{% endfor %}
 </script>
  
     <span class="meta">📅 <a href="{{ checkin.url | relative_url }}">{{ checkin.date | date: "%d %B %Y" }}</a></span>
