@@ -3,7 +3,7 @@ layout: default
 title: "Home"
 ---
 
-{% assign all_items = site.posts | concat: site.notes | concat: site.photos | concat: site.bookmarks | concat: site.checkins| sort: "date" | reverse %}
+{% assign all_items = site.posts | concat: site.notes | concat: site.photos | concat: site.bookmarks | concat: site.checkins | sort: "date" | reverse %}
 
 <main id="content-list">
   {% for item in all_items %}
@@ -23,7 +23,7 @@ title: "Home"
   {{ item.date | date: "%B %d, %Y" }}
 </time></a></span>
 
-       {% elsif item.collection == "checkins" %}
+       {% elsif item.collection == "checkins" %}  
         <span class="meta">📍 Checkins </span>
       
      
