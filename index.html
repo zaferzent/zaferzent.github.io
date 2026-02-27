@@ -29,8 +29,12 @@ title: "Home"
 
 <p>📍 {{ item.title }}</p>
 
-<div id="map-{{ forloop.index }}" 
-     style="height:250px; margin:15px 0; border-radius:12px;">
+
+<div 
+  class="map"
+  data-lat="{{ item.latitude }}"
+  data-lng="{{ item.longitude }}"
+  style="height:250px; margin:15px 0; border-radius:12px;">
 </div>
 
 <span class="meta">
