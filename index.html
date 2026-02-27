@@ -23,26 +23,37 @@ title: "Home"
   {{ item.date | date: "%B %d, %Y" }}
 </time></a></span>
 
-       {% elsif item.collection == "checkins" %}  
-        <span class="meta">📍 Checkins </span>
-      
-     
-<!--checkin map -->
+      {% elsif item.collection == "checkins" %}
 
-   
-     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> 
-        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    {% for checkin in checkins %} 
-  <p> 📍 {{ checkin.title }} </p>
-       
-        <div id="map-{{ forloop.index }}" style="height:350px; margin:20px 0; border-radius:12px;"></div> 
-       
-        <script> var lat = {{ checkin.latitude | default: 0 }}; var lng = {{ checkin.longitude | default: 0 }}; if(lat && lng){ var map{{ forloop.index }} = L.map('map-{{ forloop.index }}') .setView([lat, lng], 14); L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap' }).addTo(map{{ forloop.index }}); L.marker([lat, lng]).addTo(map{{ forloop.index }}); } </script>
-        
-        <span class="meta">📅 <a href="{{ checkin.url | relative_url }}">{{ checkin.date | date: "%d %B %Y" }}</a>
-        </span>
-    {% endfor %} 
-<!---checkin map-->
+<span class="meta">📍 Checkins</span>
+
+<p>📍 {{ item.title }}</p>
+
+<div id="map-{{ forloop.index }}" 
+     style="height:250px; margin:15px 0; border-radius:12px;">
+</div>
+
+<span class="meta">
+  📅 <a href="{{ item.url | relative_url }}">
+  {{ item.date | date: "%d %B %Y" }}
+  </a>
+</span>
+
+<script>
+var lat = {{ item.latitude | default: 0 }};
+var lng = {{ item.longitude | default: 0 }};
+
+if(lat && lng){
+  var map{{ forloop.index }} = L.map('map-{{ forloop.index }}')
+    .setView([lat, lng], 13);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap'
+  }).addTo(map{{ forloop.index }});
+
+  L.marker([lat, lng]).addTo(map{{ forloop.index }});
+}
+</script>
 
       {% elsif item.collection == "photos" %}
         <span class="meta">📷 Photo</span>  
