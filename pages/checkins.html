@@ -9,48 +9,17 @@ permalink: /checkins/
     margin: 20px;
     border-radius: 10px;">Checkins</h1>
 
-<main>
-
-{% assign checkins = site.checkins | sort: "date" | reverse %}
-
-<!-- Leaflet sadece 1 kere -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-{% for checkin in checkins %}
-  <article class="post">
-
-    <p>📍 {{ checkin.title }}</p>
-
-    <div id="map-{{ forloop.index }}" 
-         style="height:350px; margin:20px 0; border-radius:12px;">
-    </div>
-
-    <span class="meta">
-      📅 <a href="{{ checkin.url | relative_url }}">
-      {{ checkin.date | date: "%d %B %Y" }}
-      </a>
-    </span>
-
-    <script>
-      (function() {
-        var lat = {{ checkin.latitude | default: 0 }};
-        var lng = {{ checkin.longitude | default: 0 }};
-
-        if(lat && lng){
-          var map = L.map('map-{{ forloop.index }}')
-            .setView([lat, lng], 14);
-
-          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap'
-          }).addTo(map);
-
-          L.marker([lat, lng]).addTo(map);
-        }
-      })();
-    </script>
-
-  </article>
-{% endfor %}
-
+<main> {% assign checkins = site.checkins | sort: "date" | reverse %} 
+    {% for checkin in checkins %} 
+    <article class="post"> <p> 📍 {{ checkin.title }} </p>
+        {% for checkin in checkins %} 
+        <div id="map-{{ forloop.index }}" style="height:350px; margin:20px 0; border-radius:12px;"></div> {% endfor %} 
+        <!-- LEAFLET CSS & JS --> 
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> 
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script> {% for checkin in checkins %} var lat = {{ checkin.latitude | default: 0 }}; var lng = {{ checkin.longitude | default: 0 }}; if(lat && lng){ var map{{ forloop.index }} = L.map('map-{{ forloop.index }}') .setView([lat, lng], 14); L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap' }).addTo(map{{ forloop.index }}); L.marker([lat, lng]).addTo(map{{ forloop.index }}); } {% endfor %} </script>
+        
+        <span class="meta">📅 <a href="{{ checkin.url | relative_url }}">{{ checkin.date | date: "%d %B %Y" }}</a>
+        </span>
+    </article> {% endfor %} 
 </main>
