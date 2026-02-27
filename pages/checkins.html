@@ -15,7 +15,10 @@ permalink: /checkins/
   <article class="post">
     <p> 📍 {{ checkin.title }}            </p>
 
-<div id="map" style="height:350px; margin:20px 0; border-radius:12px;"></div>
+
+{% for checkin in checkins %}
+<div id="map-{{ forloop.index }}" style="height:350px; margin:20px 0; border-radius:12px;"></div>
+{% endfor %}
 
 
 <!-- LEAFLET CSS & JS -->
