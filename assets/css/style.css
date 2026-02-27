@@ -27,6 +27,7 @@ p{line-height: 27px; font-size:18px; font-weight: 300;}
   overflow:hidden;
   top:10px;
   position: sticky;
+  z-index: 9999;
 }
 main a{color: #4682b4; text-decoration: none}
 main a:hover{border-bottom: 1px solid dodgerblue;}
