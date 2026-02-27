@@ -10,6 +10,9 @@ permalink: /checkins/
     border-radius: 10px;">Checkins</h1>
 
 <main> {% assign checkins = site.checkins | sort: "date" | reverse %} 
+   
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> 
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     {% for checkin in checkins %} 
     <article class="post"> <p> 📍 {{ checkin.title }} </p>
        
@@ -20,7 +23,6 @@ permalink: /checkins/
         <span class="meta">📅 <a href="{{ checkin.url | relative_url }}">{{ checkin.date | date: "%d %B %Y" }}</a>
         </span>
     </article> {% endfor %} 
-     <!-- LEAFLET CSS & JS --> 
-        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> 
-        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+     
+       
 </main>
