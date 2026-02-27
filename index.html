@@ -28,12 +28,12 @@ title: "Home"
       
      
 <!--checkin map -->
-{% assign checkins = site.checkins | sort: "date" | reverse %} 
+
    
      <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> 
         <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     {% for checkin in checkins %} 
-    <article class="post"> <p> 📍 {{ checkin.title }} </p>
+  <p> 📍 {{ checkin.title }} </p>
        
         <div id="map-{{ forloop.index }}" style="height:350px; margin:20px 0; border-radius:12px;"></div> 
        
