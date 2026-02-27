@@ -18,7 +18,7 @@ permalink: /checkins/
        
         <div id="map-{{ forloop.index }}" style="height:350px; margin:20px 0; border-radius:12px;"></div> 
        
-        <script> {% for checkin in checkins %} var lat = {{ checkin.latitude | default: 0 }}; var lng = {{ checkin.longitude | default: 0 }}; if(lat && lng){ var map{{ forloop.index }} = L.map('map-{{ forloop.index }}') .setView([lat, lng], 14); L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap' }).addTo(map{{ forloop.index }}); L.marker([lat, lng]).addTo(map{{ forloop.index }}); } {% endfor %} </script>
+        <script> var lat = {{ checkin.latitude | default: 0 }}; var lng = {{ checkin.longitude | default: 0 }}; if(lat && lng){ var map{{ forloop.index }} = L.map('map-{{ forloop.index }}') .setView([lat, lng], 14); L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap' }).addTo(map{{ forloop.index }}); L.marker([lat, lng]).addTo(map{{ forloop.index }}); } </script>
         
         <span class="meta">📅 <a href="{{ checkin.url | relative_url }}">{{ checkin.date | date: "%d %B %Y" }}</a>
         </span>
