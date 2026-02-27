@@ -29,9 +29,15 @@ title: "Home"
 
 <p>📍 {{ item.title }}</p>
 
+{% elsif item.collection == "checkins" %}
+
+<span class="meta">📍 Checkins</span>
+
+<p>📍 {{ item.title }}</p>
 
 <div 
   class="map"
+  id="map-{{ forloop.index }}"
   data-lat="{{ item.latitude }}"
   data-lng="{{ item.longitude }}"
   style="height:250px; margin:15px 0; border-radius:12px;">
@@ -61,15 +67,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     L.marker([lat, lng]).addTo(map);
 
-    // 👇 KRİTİK SATIR
-    setTimeout(function () {
+    setTimeout(function(){
       map.invalidateSize();
-    }, 300);
+    }, 200);
 
   }
 
 });
 </script>
+
 
       {% elsif item.collection == "photos" %}
         <span class="meta">📷 Photo</span>  
