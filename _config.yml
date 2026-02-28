@@ -20,7 +20,7 @@ collections:
     permalink: /bookmarks/:title/
   checkins:
     output: true
-    permalink: /checkins/:title/
+    permalink: /checkins/:title/:year:month:day/
     
 include:
   - _pages
