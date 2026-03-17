@@ -2,6 +2,7 @@
 layout: note
 title: "New Content Type Check-in"
 date: 2026-02-27 00:30:00 +0300
+published: false
 ---
 When I was transforming my blog into its current structure, there were a few websites I had seen before that really inspired me. The idea of sharing everything on my own site — instead of on social media — appealed to me much more.
 
