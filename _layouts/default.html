@@ -29,10 +29,27 @@
    {% include notification.html %}
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  timeago.render(document.querySelectorAll('.timeago'), 'en');
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+document.querySelectorAll(".dayago").forEach(function(el) {
+
+const date = new Date(el.getAttribute("datetime"));
+const now = new Date();
+
+const diffTime = now - date;
+const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+if(diffDays <= 0){
+el.textContent = "Today";
+}
+else if(diffDays === 1){
+el.textContent = "Yesterday";
+}
+else{
+el.textContent = diffDays + " days ago";
+}
+
+});
 });
 </script>
 
