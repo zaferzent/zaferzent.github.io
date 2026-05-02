@@ -12,15 +12,15 @@ title: "Home"
         <span class="meta">✍️ Post</span>
         <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
         <p>{{ item.excerpt }}</p>
-        <span class="meta">📅 <time class="timeago" datetime="{{ item.date | date: "%Y-%m-%dT%H:%M:%S%:z" }}">
-  {{ item.date | date: "%B %d, %Y" }}
+        <span class="meta">📅 <time class="timeago" datetime="{{ item.date | date: "%Y-%m-%dT%H:%M:%S%:z" }}"
+title="{{ item.date | date: "%d %B %Y" }}">
 </time></span>
 
       {% elsif item.collection == "notes" %}
         <span class="meta">🗒️ Note and Thoughts</span>
         <p>{{ item.content }}</p>
-        <span class="meta">📅 <a title="{{ item.title }}" href="{{ item.url }}"><time class="timeago" datetime="{{ item.date | date: "%Y-%m-%dT%H:%M:%S%:z" }}">
-  {{ item.date | date: "%B %d, %Y" }}
+        <span class="meta">📅 <a title="{{ item.title }}" href="{{ item.url }}"><time class="timeago" datetime="{{ item.date | date: "%Y-%m-%dT%H:%M:%S%:z" }}"
+title="{{ item.date | date: "%d %B %Y" }}">
 </time></a></span>
 
       {% elsif item.collection == "checkins" %}
@@ -37,8 +37,8 @@ title: "Home"
         <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
         <img src="{{ item.image }}">
         <p>{{ item.content }}</p>
-        <span class="meta">📅 <time class="timeago" datetime="{{ item.date | date: "%Y-%m-%dT%H:%M:%S%:z" }}">
-  {{ item.date | date: "%B %d, %Y" }}
+        <span class="meta">📅 <time class="timeago" datetime="{{ item.date | date: "%Y-%m-%dT%H:%M:%S%:z" }}"
+title="{{ item.date | date: "%d %B %Y" }}">
 </time></span>
         {% if item.location %}
           <span class="meta">📍 {{ item.location }}</span>
