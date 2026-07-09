@@ -3,7 +3,7 @@ layout: note
 title: "A New Now Page"
 date: 2026-07-09 21:50:00 +0300
 ---
-Today I added a new Now page to my blog.
+Today I added a new [Now](https://www.zaferzent.com/now) page to my blog.
 
 The purpose of this page is to share what I'm currently working on, what I'm learning, and what I'm focused on at the moment. Instead of posting frequent updates on social media, I wanted a simple place where visitors can always see what I'm up to.
 
