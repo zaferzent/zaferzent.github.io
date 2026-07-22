@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2025-07-23 00:30 Europe/Istanbul'
+date: '2026-07-23 00:30 Europe/Istanbul'
 categories:
   - Laptop
   - Computer
