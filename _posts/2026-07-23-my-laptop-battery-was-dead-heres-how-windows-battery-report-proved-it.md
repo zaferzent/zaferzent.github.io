@@ -12,9 +12,6 @@ image: assets/images/laptop-battery.png
 title: "My Laptop Battery Was Dead: Here's How Windows Battery Report Proved It"
 ---
 ![Laptop Battery](/assets/images/laptop-battery.png)
-
-**How I Discovered My Laptop Battery Was Dead Using Windows Battery Report**
-
 For quite some time, I noticed that my laptop battery wasn't performing like it used to. The battery percentage dropped much faster than before, and sometimes the laptop would shut down only minutes after unplugging the charger.
 
 At first, I wasn't sure whether the battery was actually failing or if Windows was simply reporting incorrect battery information.
