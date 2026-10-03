@@ -2,10 +2,11 @@
 layout: none
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://w3.org">
   <channel>
     <title>{{ site.title | xml_escape }}</title>
-    <link>{{ site.url }}{{ site.baseurl }}</link>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
     <description>{{ site.description | xml_escape }}</description>
     <language>en</language>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
@@ -13,21 +14,24 @@ layout: none
     {% assign all_content = site.blog | concat: site.notes | concat: site.photos | concat: site.bookmarks | sort: 'date' | reverse %}
     {% for item in all_content %}
       <item>
-        <title>{{ item.title | xml_escape }}</title>
+        <title>{% if item.title %}{{ item.title | xml_escape }}{% else %}{{ item.date | date: "%B %d, %Y" }}{% endif %}</title>
         <link>{{ site.url }}{{ item.url }}</link>
         <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
-        <guid>{{ site.url }}{{ item.url }}</guid>
+        <guid isPermaLink="true">{{ site.url }}{{ item.url }}</guid>
+        {% if item.image %}
+        <enclosure url="{{ item.image | absolute_url }}" type="image/jpeg" length="0" />
+        {% endif %}
         <description><![CDATA[
           {% if item.image %}
-            <p><img src="{{ item.image }}" alt="{{ item.title | escape }}" style="max-width:100%; height:auto;"></p>
+            <p><img src="{{ item.image | absolute_url }}" alt="{{ item.title | xml_escape }}" style="max-width:100%; height:auto;"></p>
           {% endif %}
           {% if item.location %}
-            <p><strong>📍 {{ item.location }}</strong></p>
+            <p><strong>📍 {{ item.location | xml_escape }}</strong></p>
           {% endif %}
           {% if item.content %}
-            {{ item.content | markdownify }}
+            {{ item.content }}
           {% else %}
-            <p>{{ item.title }}</p>
+            <p>{{ item.title | xml_escape }}</p>
           {% endif %}
         ]]></description>
       </item>
