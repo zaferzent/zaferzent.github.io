@@ -11,8 +11,17 @@ layout: none
     <language>en</language>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 
-    {% assign all_content = site.blog | concat: site.notes | concat: site.photos | concat: site.bookmarks | sort: 'date' | reverse %}
-    {% for item in all_content %}
+    {% comment %} Tüm koleksiyonları güvenli bir şekilde birleştiriyoruz {% endcomment %}
+    {% assign all_content = "" | split: "," %}
+    {% if site.blog %}{% assign all_content = all_content | concat: site.blog %}{% endif %}
+    {% if site.notes %}{% assign all_content = all_content | concat: site.notes %}{% endif %}
+    {% if site.photos %}{% assign all_content = all_content | concat: site.photos %}{% endif %}
+    {% if site.bookmarks %}{% assign all_content = all_content | concat: site.bookmarks %}{% endif %}
+    
+    {% assign sorted_content = all_content | sort: 'date' | reverse %}
+    
+    {% comment %} RSS standartları için en güncel 50 gönderiyi listelemek idealdir, sınırı kaldırmak isterseniz limit: 50 kısmını silebilirsiniz {% endcomment %}
+    {% for item in sorted_content limit: 50 %}
       <item>
         <title>{% if item.title %}{{ item.title | xml_escape }}{% else %}{{ item.date | date: "%B %d, %Y" }}{% endif %}</title>
         <link>{{ site.url }}{{ item.url }}</link>
